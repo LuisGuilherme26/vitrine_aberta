@@ -1,6 +1,7 @@
 import Logo_h from "../media/logo_h.png"
 import { FaSearch } from 'react-icons/fa'
 import { IoIosArrowUp } from 'react-icons/io'
+// import Login from './Login'
 
 const Navbar = () =>{
     return(
