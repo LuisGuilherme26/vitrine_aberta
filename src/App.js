@@ -5,6 +5,7 @@ import Cadastro from './components/Cadastro';
 import Login from './components/Login';
 import Home from './components/Home';
 import Exposicao from './components/Exposicao';
+import Sobre from './components/Sobre';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Login/>
       <Home/>
       <Exposicao/>
+      <Sobre/>
     </>
   );
 }

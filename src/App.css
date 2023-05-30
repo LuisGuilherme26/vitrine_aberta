@@ -490,3 +490,63 @@ nav button{
   justify-content: center;
   align-items: center;
 }
+
+.bg-cor-laranja{
+  background-color: #E4623E;
+}
+
+#sobre{
+  color: white;
+  padding-top: 4%;
+}
+
+#sobre .sobre-titulo{
+  display: flex;
+  margin-left: 4%;
+  /* Alterar para alinhamento correto */
+}
+#sobre .sobre-o-que-e{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sobre .sobre-o-que-e .textos{
+  width: 600px;
+  max-width: 882px;
+  margin-left: 4%;
+}
+#sobre img{
+  width: 300;
+  max-width: 446px;
+  max-height: 412px;
+  height: 312px;
+}
+
+#sobre .sobre-licenca{
+  background-color: white;
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 25px;
+  
+}
+
+#sobre .sobre-licenca .textos{
+  width: 600px;
+  max-width: 882px;
+  margin-right: 4%;
+}
+
+#sobre .sobre-soft-livre{
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sobre .sobre-soft-livre .textos{
+  width: 600px;
+  max-width: 882px;
+  margin-left: 4%;
+}
