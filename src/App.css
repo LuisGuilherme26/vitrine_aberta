@@ -515,36 +515,40 @@ nav button{
   max-width: 882px;
   margin-left: 4%;
 }
-#sobre img{
+#sobre .sobre-img{
   width: 300;
   max-width: 446px;
   max-height: 412px;
   height: 312px;
 }
-
 #sobre .sobre-licenca{
-  background-color: white;
-  padding-top: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  border-radius: 25px;
-  
-}
 
+  background-image: url('./media/retangulo.svg');
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-bottom: 15%;
+  margin-top: 4%;
+
+}
 #sobre .sobre-licenca .textos{
+  color: black;
   width: 600px;
   max-width: 882px;
   margin-right: 4%;
 }
-
 #sobre .sobre-soft-livre{
-  padding-top: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #sobre .sobre-soft-livre .textos{
   width: 600px;
   max-width: 882px;

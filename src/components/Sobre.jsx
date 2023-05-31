@@ -11,7 +11,7 @@ const Sobre = () => {
             </div>
             <section className='sobre-o-que-e'>
                 <div>
-                    <img src={img01} alt="" />
+                    <img src={img01} alt="" className='sobre-img' />
                 </div>
                 <div className='textos'>
                     <h3>O que é a Vitrine Aberta?</h3>
@@ -20,16 +20,16 @@ const Sobre = () => {
             </section>
             <section className='sobre-licenca'>
                 <div className='textos'>
-                    <h3>Uso de conteúdo e licença?</h3>
+                    <h3>O que é a Vitrine Aberta?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis commodi tenetur nulla minus consequatur rem voluptatibus ab, laboriosam enim porro similique vel debitis minima, incidunt quam, sint doloribus suscipit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero beatae placeat, sint neque quasi consectetur amet ad saepe, illum quas illo, incidunt nihil. Ipsum numquam cupiditate doloremque nihil ea odio!</p>
                 </div>
                 <div>
-                    <img src={img03} alt="" />
+                    <img src={img03} alt="" className='sobre-img' />
                 </div>
             </section>
             <section className='sobre-soft-livre'>
                 <div>
-                    <img src={img02} alt="" />
+                    <img src={img02} alt="" className='sobre-img' />
                 </div>
                 <div className='textos'>
                     <h3>O que é a Vitrine Aberta?</h3>
