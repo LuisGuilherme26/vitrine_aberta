@@ -1,22 +1,20 @@
 import Logo_h from "../media/logo_h.png"
 import { FaSearch } from 'react-icons/fa'
-import { IoIosArrowUp } from 'react-icons/io'
 
 const Navbar = () =>{
     return(
         <>
             <nav>
-                <div className="nav-box" style={{ width: "25%" }}>
+                <div className="nav-box" style={{ width: "60%" }}>
                     <img src={Logo_h}/>
-                </div>
-                <div className="nav-box" style={{ width: "40%" }}>
                     <ul>
                         <li>Home</li>
-                        <li>Disciplinas <IoIosArrowUp style={{ fontSize: "18px" }}/></li>
+                        <li>Disciplinas</li>
                         <li>Perfis</li>
                         <li>Bate-papo</li>
                         <li>Sobre</li>
                     </ul>
+                    <button style={{ background: "transparent", color: "#E4623E", border: "2px solid #E4623E", fontSize: "17px"}}>Expor Trabalho</button>
                 </div>
                 <div className="navbox" style={{ width: "25%", position: "relative"}}>
                     <input type="text" placeholder="Buscar"/>

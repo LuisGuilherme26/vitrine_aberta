@@ -5,15 +5,16 @@ import Cadastro from './components/Cadastro';
 import Login from './components/Login';
 import Home from './components/Home';
 import Exposicao from './components/Exposicao';
+import Disciplina from './components/Disciplina';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Cadastro/>
-      <Login/>
-      <Home/>
+      {/* <Disciplina /> */}
       <Exposicao/>
+      <Footer />
     </>
   );
 }
