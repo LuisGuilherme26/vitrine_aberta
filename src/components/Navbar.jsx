@@ -1,9 +1,9 @@
 import Logo_h from "../media/logo_h.png"
 import { FaSearch } from 'react-icons/fa'
-import { IoIosArrowUp } from 'react-icons/io'
 import Login from './Login'
 import React, {useState} from 'react'
 import Modal from 'react-modal'
+import { Link } from 'react-router-dom';
 
 Modal.setAppElement("#root");
 
@@ -25,23 +25,23 @@ const Navbar = () =>{
                 isOpen = {modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Login"
-                overlayClassName="modal-overlay"
-                className="modal-content"
+                overlayClassName="modal-overlay Login"
+                className="modal-content Login"
             >
-                <Login></Login>
+                <Login/>
             </Modal>
 
             <nav>
                 <div className="nav-box" style={{ width: "60%" }}>
                     <img src={Logo_h}/>
                     <ul>
-                        <li>Home</li>
-                        <li>Disciplinas</li>
+                        <li><Link className="link-route" to="/">Home</Link></li>
+                        <li><Link className="link-route" to="/disciplina">Disciplinas</Link></li>
                         <li>Perfis</li>
                         <li>Bate-papo</li>
-                        <li>Sobre</li>
+                        <li><Link className="link-route" to="/sobre">Sobre</Link></li>
                     </ul>
-                    <button style={{ background: "transparent", color: "#E4623E", border: "2px solid #E4623E", fontSize: "17px"}}>Expor Trabalho</button>
+                    <Link className="link-route" to="/exposicao"><button style={{ background: "transparent", color: "#E4623E", border: "2px solid #E4623E", fontSize: "17px", width: "200px"}}>Expor Trabalho</button></Link>
                 </div>
                 <div className="navbox" style={{ width: "25%", position: "relative"}}>
                     <input type="text" placeholder="Buscar"/>

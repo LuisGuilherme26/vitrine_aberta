@@ -2,6 +2,11 @@ body {
   background-color: #e3e3e3;
 }
 
+.link-route{
+  text-decoration: none;
+  color: #000;
+}
+
 .modal-overlay{
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -249,7 +254,7 @@ nav button{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .Publicacao .publi-box{
@@ -551,7 +556,6 @@ nav button{
 footer{
   height: 320px;
   background-color: #F7F1EF;
-  margin-top: 20px;
   position: relative;
 }
 
@@ -581,7 +585,9 @@ footer{
 
 .f-content .f-box p{
   font-size: 20px;
-.modal-overlay{
+}
+
+.modal-overlay.Login{
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
   bottom: 0;
@@ -594,8 +600,9 @@ footer{
   justify-content: center;
 }
 
-.modal-content{
+.modal-content.Login{
   width: 90%;
+  height: 75%;
   max-width: 70%;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 5px;
