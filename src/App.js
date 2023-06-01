@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Exposicao from './components/Exposicao';
 import Disciplina from './components/Disciplina';
 import Footer from './components/Footer';
+import Sobre from './components/Sobre';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       {/* <Disciplina /> */}
       <Exposicao/>
       <Footer />
+      <Sobre/>
     </>
   );
 }
