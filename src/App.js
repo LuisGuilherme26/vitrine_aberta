@@ -14,9 +14,9 @@ function App() {
     <>
       <Navbar />
       {/* <Disciplina /> */}
-      <Exposicao/>
-      <Footer />
+      {/* <Exposicao/> */}
       <Sobre/>
+      <Footer />
     </>
   );
 }
