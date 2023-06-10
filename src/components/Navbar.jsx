@@ -1,9 +1,9 @@
 import Logo_h from "../media/logo_h.png"
 import { FaSearch } from 'react-icons/fa'
-import { IoIosArrowUp } from 'react-icons/io'
 import Login from './Login'
 import React, {useState} from 'react'
 import Modal from 'react-modal'
+import { Link } from 'react-router-dom';
 
 Modal.setAppElement("#root");
 
@@ -25,10 +25,10 @@ const Navbar = () =>{
                 isOpen = {modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Login"
-                overlayClassName="modal-overlay"
-                className="modal-content"
+                overlayClassName="modal-overlay Login"
+                className="modal-content Login"
             >
-                <Login></Login>
+                <Login/>
             </Modal>
 
             <nav>
