@@ -55,6 +55,10 @@ const Navbar = () =>{
                             <li>3D</li>
                             <li>Ilustrações</li>
                             <li>Edição de Imagens</li>
+
+                            <li><Link className="link-route" to="/">Home</Link></li>
+                            <li><Link className="link-route" to="/Sobre">Sobre</Link></li>
+                            <li><Link className="link-route" to="/disciplina">Disciplina</Link></li>
                         </ul>
                     </div>
                 </div>
