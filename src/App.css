@@ -8,33 +8,48 @@ ul{
 }
 
 nav{
-  background-color: #F7F1EF;
   width: 100%;
-  height: 85px;
-  box-shadow: 5px 5px 5px #a6a6a6;
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   top: 0;
   z-index: 2;
 }
 
-nav .nav-box{
+.navbar-secondary{
+  background-color: #F7F1EF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 86px;
+  box-shadow: 5px 5px 5px #a6a6a6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.navbar .nav-box{
   display: flex;
   align-items: center;
   height: 20px;
-  width: 30%;
+  width: 15%;
 }
 
-nav li{
-  font-weight: bold;
-  font-size: 22px;
+.navbar-secondary li{
+  font-size: 18px;
   cursor: pointer;
   margin-right: 45px;
+  padding: 10px;
+}
+.navbar-secondary li:hover{
+  background-color: #F5D9D0;
 }
 
-nav input{
+.navbar input{
   width: 75%;
   height: 50px;
   outline: none;
@@ -47,7 +62,7 @@ nav input{
   box-sizing: border-box;
 }
 
-nav input::placeholder{
+.navbar input::placeholder{
   color: black;
   font-size: 20px;
   font-weight: bolder;
@@ -56,14 +71,13 @@ nav input::placeholder{
   top: 28%;
 }
 
-nav button{
+.btn-navbar{
   color: #fff;
   background-color: #E4623E;
-  padding: 15px;
-  width: 20%;
-  border-radius: 10px;
+  padding: 10px;
+  width: 138px;
   border: none;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   /* margin-left: 20px; */
   cursor: pointer;

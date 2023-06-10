@@ -32,23 +32,31 @@ const Navbar = () =>{
             </Modal>
 
             <nav>
-                <div className="nav-box" style={{ width: "25%" }}>
-                    <img src={Logo_h}/>
+                <div className="navbar">
+                    <div className="nav-box">
+                        <img src={Logo_h}/>
+                        <h2 style={{marginLeft: "20%"}}>Disciplinas</h2>
+                    </div>
+                    <div className="navbox" style={{ width: "50%", position: "relative", height: "45px"}}>
+                        <input type="text" placeholder="Buscar"/>
+                        <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "15px", padding: "4px",
+                    boxSizing: "border-box", transform: "translateY(-50%)"}}/>
+                        <button onClick={openModal} className="btn-navbar">Login</button>
+                    </div>
                 </div>
-                <div className="nav-box" style={{ width: "40%" }}>
-                    <ul>
-                        <li>Home</li>
-                        <li>Disciplinas <IoIosArrowUp style={{ fontSize: "18px" }}/></li>
-                        <li>Perfis</li>
-                        <li>Bate-papo</li>
-                        <li>Sobre</li>
-                    </ul>
-                </div>
-                <div className="navbox" style={{ width: "25%", position: "relative"}}>
-                    <input type="text" placeholder="Buscar"/>
-                    <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "15px", padding: "4px",
-                boxSizing: "border-box", transform: "translateY(-50%)"}}/>
-                    <button onClick={openModal}>Login</button>
+                <div className="navbar-secondary" style={{padding: "15px"}}>
+                    <div className="nav-box">
+                        <button className="btn-navbar">Perfis</button>
+                    </div>
+                    <div className="nav-box">
+                        <ul>
+                            <li>Tudo</li>
+                            <li>Animações</li>
+                            <li>3D</li>
+                            <li>Ilustrações</li>
+                            <li>Edição de Imagens</li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </>
