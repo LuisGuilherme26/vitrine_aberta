@@ -7,8 +7,65 @@ const Disciplina = () => {
             <div className="disc">
                 <h2>MODELAGEM TRIDIMENSIONAL</h2>
                 <div>
-                    <button>Filtrar</button>
-                    <button>Data</button>
+                    <button className="btn-filtros">Filtrar <div className="filtro-drop">
+                        <div className="drop">
+                            <div className="drop-organizer">
+                                <div className="data-envio">
+                                    <h4>Data de Envio</h4>
+                                    <ul>
+                                        <li>Hoje</li>
+                                        <li>Esta semana</li>
+                                        <li>Últimos 15 dias</li>
+                                        <li>Este mês</li>
+                                    </ul>
+                                </div>
+                                <div className="ordem">
+                                    <h4>Ordenar por</h4>
+                                    <ul>
+                                        <li>Mais antigo</li>
+                                        <li>Mais recente</li>
+                                    </ul>
+                                </div>
+                                <div className="midia">
+                                    <h4>Mídia</h4>
+                                    <div className="midia-box">
+                                        <input type="checkbox" />
+                                        <p>PDFs</p>
+                                    </div>
+                                    <div className="midia-box">
+                                        <input type="checkbox" />
+                                        <p>Vídeos</p>
+                                    </div>
+                                    <div className="midia-box">
+                                        <input type="checkbox" />
+                                        <p>Imagens</p>
+                                    </div>
+                                    <div className="midia-box">
+                                        <input type="checkbox" />
+                                        <p>Todos os tipos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="palavras">
+                                <input type="text" placeholder="Buscar por palavras-chave..."/>
+                            </div>
+                        </div>
+                    </div></button>
+                    <button className="btn-data">Data
+                        <div className="data-drop">
+                            <ul>
+                                <li>2023</li>
+                                <li>2022</li>
+                                <li>2021</li>
+                                <li>2020</li>
+                                <li>2019</li>
+                                <li>2018</li>
+                                <li>2017</li>
+                                <li>2016</li>
+                                <li>2015</li>
+                            </ul>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div className="trab">
