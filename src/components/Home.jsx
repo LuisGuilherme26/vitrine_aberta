@@ -4,7 +4,7 @@ import Janela_img from "../media/home-inicio-img.svg"
 const Home = () => {
     return (
         <>
-            <div className="container" style={{width:"100%", display:"flex", justifyContent:"center", marginTop:"15%"}}>
+            <div className="container" style={{width:"100%", display:"flex", justifyContent:"center", marginTop:"7%"}}>
                 <div className="conteudo" style={{width:"80%"}}>
                     <div className="Filtro">
                         <button className="active" id="publi-btn">Publicações recentes

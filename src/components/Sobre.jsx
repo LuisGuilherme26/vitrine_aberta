@@ -6,7 +6,7 @@ import img03 from '../media/sobre-img-3.svg'
 const Sobre = () => {
     return(
         <div className='container bg-cor-laranja' id='sobre'>
-            <div className='sobre-titulo' style={{marginTop:"10%"}}>
+            <div className='sobre-titulo' style={{marginTop:"5%"}}>
                 <h2>Sobre nós</h2>
             </div>
             <section className='sobre-o-que-e'>
