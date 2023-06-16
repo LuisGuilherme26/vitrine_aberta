@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Exposicao from './components/Exposicao';
+import Cadastro from './components/Cadastro';
 import Disciplina from './components/Disciplina';
 import Footer from './components/Footer';
 import Sobre from './components/Sobre';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/disciplina" element={<Disciplina />}/>
           <Route path="/sobre" element={<Sobre />}/>
           <Route path="/exposicao" element={<Exposicao />}/>
+          <Route path="/cadastro" element={<Cadastro />}/>
           <Route path="/perfis" element={<Perfil />}/>
         </Routes>
       </Router>

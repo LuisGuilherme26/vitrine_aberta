@@ -1,37 +1,71 @@
 import Logo_h from "../media/logo_h.png"
-import { FaArrowAltCircleUp, FaSearch } from 'react-icons/fa'
-import Login from './Login'
-import React, {useState} from 'react'
+import Logo from "../media/logo.png"
+import { FaSearch } from 'react-icons/fa'
+import React, { useState } from 'react'
 import Modal from 'react-modal'
 import { Link } from 'react-router-dom';
-import { FaArrowAltCircleDown } from "react-icons/fa"
-import { FaArrowUp } from "react-icons/fa"
+// import userImg from "../media/user.svg"
 import userImg from "../media/user.svg"
 
 Modal.setAppElement("#root");
 
-const Navbar = () =>{
+const Navbar = () => {
 
     const [modalIsOpen, setIsOpen] = useState(false);
 
-    function openModal(){
+    function openModal() {
         setIsOpen(true);
     }
 
-    function closeModal(){
+    function closeModal() {
         setIsOpen(false);
     }
 
-    return(
+    return (
         <>
             <Modal
-                isOpen = {modalIsOpen}
+                isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Login"
                 overlayClassName="modal-overlay Login"
                 className="modal-content Login"
             >
-                <Login/>
+                <div className="Container">
+                    <div className="Logo-box">
+                        <img src={Logo} />
+                    </div>
+                    <div className="Login-content">
+                        <h1>Entrar</h1>
+                        <div className="content-body">
+                            <div className="box">
+                                <label>Nome de usuário</label>
+                                <input type="text" placeholder="Usuario" />
+                            </div>
+                            <div className="box">
+                                <label>Senha</label>
+                                <input type="password" placeholder="Senha" />
+                                <a href="">Esqueci minha senha</a>
+                            </div>
+                        </div>
+                        <div className="content-footer">
+                            <button>entrar</button>
+                            <div>
+                                <span>Ainda não se cadastrou?</span>
+                                <Link className="link-route" to="/cadastro">
+                                    <button onClick={closeModal} style={{
+                                        background: "transparent",
+                                        border: "transparent",
+                                        color: "grey",
+                                        fontWeight: "bold",
+                                        fontSize: "15px",
+                                        cursor: "pointer"
+                                    }}>Crie uma conta</button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </Modal>
 
             <nav    >

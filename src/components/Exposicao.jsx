@@ -119,7 +119,7 @@ const Exposicao = () => {
                                         color={colorText}
                                         onChangeComplete={handleColorText}
                                     />
-                                    <input type="checkbox" onChange={handleBold} /><span>Negirto???</span>
+                                    <input type="checkbox" onChange={handleBold} /><span>Negrito</span>
                                     <label>
                                         Tamanho da letra:
                                         <select name="size" onChange={handleSize}>
