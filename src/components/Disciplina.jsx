@@ -89,7 +89,7 @@ const Disciplina = () => {
                     </div>
                 </div>
             </div>
-            <div className="orange-bar"></div>
+            {/* <div className="orange-bar"></div> */}
         </div>
     )
 }
