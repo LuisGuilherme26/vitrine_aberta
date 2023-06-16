@@ -7,6 +7,7 @@ import Disciplina from './components/Disciplina';
 import Footer from './components/Footer';
 import Sobre from './components/Sobre';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Perfil from './components/Perfil';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />}/>
           <Route path="/exposicao" element={<Exposicao />}/>
           <Route path="/cadastro" element={<Cadastro />}/>
+          <Route path="/perfis" element={<Perfil />}/>
         </Routes>
       </Router>
       <Footer />
