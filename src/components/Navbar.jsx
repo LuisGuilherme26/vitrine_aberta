@@ -1,8 +1,10 @@
 import Logo_h from "../media/logo_h.png"
+import Logo from "../media/logo.png"
 import { FaSearch } from 'react-icons/fa'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Modal from 'react-modal'
 import { Link } from 'react-router-dom';
+// import userImg from "../media/user.svg"
 
 Modal.setAppElement("#root");
 
@@ -65,7 +67,7 @@ const Navbar = () => {
                 </div>
             </Modal>
 
-            <nav>
+            <nav className="navbar">
                 <div className="nav-box" style={{ width: "60%" }}>
                     <img src={Logo_h}/>
                     <ul>
@@ -81,7 +83,7 @@ const Navbar = () => {
                     <input type="text" placeholder="Buscar"/>
                     <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "15px", padding: "4px",
                 boxSizing: "border-box", transform: "translateY(-50%)"}}/>
-                    <button onClick={openModal}>Login</button>
+                    <button onClick={openModal} className="btn-navbar">Login</button>
                 </div>
                 {/* <div className="navbar-secondary">
                     <div className="nav-box">
