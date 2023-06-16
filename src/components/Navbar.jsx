@@ -6,6 +6,7 @@ import Modal from 'react-modal'
 import { Link } from 'react-router-dom';
 import { FaArrowAltCircleDown } from "react-icons/fa"
 import { FaArrowUp } from "react-icons/fa"
+import userImg from "../media/user.svg"
 
 Modal.setAppElement("#root");
 
@@ -59,20 +60,19 @@ const Navbar = () =>{
                         <input type="text" placeholder="Buscar"/>
                         <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "15px", padding: "4px",
                     boxSizing: "border-box", transform: "translateY(-50%)"}}/>
-                        <button onClick={openModal} className="btn-navbar">Login</button>
+                        <button onClick={openModal} className="btn-navbar" style={{display:"none"}}>Login</button>
+                    </div>
+                    <div className="user-dropdown nav-box">
+                        <img src={userImg} alt="" className="user-img"/>
+                        <div className="user-dropdown-content">
+                            <ul>
+                                <li>Ver perfil</li>
+                                <li>Configurações</li>
+                                <li>Sair</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                {/* <div className="navbar-secondary">
-                    <div className="nav-box">
-                        <ul>
-                            <li>Tudo</li>
-                            <li>Animações</li>
-                            <li>3D</li>
-                            <li>Ilustrações</li>
-                            <li>Edição de Imagens</li>
-                        </ul>
-                    </div>
-                </div> */}
             </nav>
         </>
     )
