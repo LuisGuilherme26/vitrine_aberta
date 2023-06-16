@@ -79,6 +79,20 @@ nav{
   width: 15%;
 }
 
+.navbar .btn-expor{
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #E4623E;
+  border-radius: 7px;
+  font-weight: bold;
+  color: #E4623E;
+}
+
+.navbar .btn-expor:hover{
+  cursor: pointer;
+}
+
 .navbar input{
   width: 75%;
   height: 50px;

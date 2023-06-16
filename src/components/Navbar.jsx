@@ -115,6 +115,7 @@ const Navbar = () => {
                             <li><Link className="link-route" to="/Perfis">Perfis</Link></li>
                             <li><Link className="link-route" to="/Bate-papo">Bate-papo</Link></li>
                             <li><Link className="link-route" to="/Sobre">Sobre</Link></li>
+                            <li><button className="btn-expor">Expor trabalho</button></li>
                         </ul>
                     </div>
                     <div className="nav-box" style={{ width: "40%", position: "relative", height: "45px"}}>
