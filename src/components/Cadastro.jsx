@@ -35,17 +35,17 @@ const Cadastro = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="content-body">
                             <h1>Criar Conta</h1>
-                            <div className="box">
-                                <label>Nome de usuário</label>
-                                <input type="text" placeholder="Usuario" onChange={(event) => setNome(event.target.value)} />
+                            <div className="cadastro-formulario">
+                                <label> Nome de usuário</label>
+                                <input className="input-login" type="text" placeholder="Usuário" onChange={(event) => setNome(event.target.value)}/>
                             </div>
-                            <div className="box">
+                            <div className="cadastro-formulario">
                                 <label>Email</label>
-                                <input type="email" placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
+                                <input className="input-login" type="email" placeholder="Email" onChange={(event) => setEmail(event.target.value)}/>
                             </div>
-                            <div className="box">
+                            <div className="cadastro-formulario">
                                 <label>Senha</label>
-                                <input type="password" placeholder="Senha" onChange={(event) => setSenha(event.target.value)} />
+                                <input className="input-login" type="password" placeholder="Senha" onChange={(event) => setSenha(event.target.value)} />
                             </div>
                         </div>
                         <div className="content-footer">

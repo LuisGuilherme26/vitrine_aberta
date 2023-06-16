@@ -34,7 +34,35 @@ const Navbar = () => {
                     <div className="Logo-box">
                         <img src={Logo} />
                     </div>
-                    <div className="Login-content">
+                    <div className="login-conteudo ">
+                        <h1>Entrar</h1>
+                        <div className="login-conteudo-body">
+                            <div className="login-formulario">
+                                <label> Nome de usuário</label>
+                                <input className="input-login" type="text" placeholder="Usuário"/>
+                            </div>
+                            <div className="login-formulario">
+                                <label>Senha</label>
+                                <input className="input-login" type="password" placeholder="Senha" />
+                                <p>Esqueci minha senha</p>
+                            </div>
+                        </div>
+                        <div className="login-conteudo-footer">
+                            <div>
+                                <button>Entrar</button>
+                                <button className="btn-cancelar">Cancelar</button>
+                            </div>
+                            <p>Ainda não se cadastrou? <span > <Link className="link-route" to="/cadastro"><button onClick={closeModal} style={{
+                                background: "transparent",
+                                border: "transparent",
+                                color: "grey",
+                                fontWeight: "bold",
+                                fontSize: "15px",
+                                cursor: "pointer"   
+                            }}>Crie uma conta!</button></Link></span></p>
+                        </div>
+                    </div>
+                    {/* <div className="Login-content">
                         <h1>Entrar</h1>
                         <div className="content-body">
                             <div className="box">
@@ -63,8 +91,7 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         </div>
-                    </div>
-
+                    </div> */}
                 </div>
             </Modal>
 
@@ -94,9 +121,9 @@ const Navbar = () => {
                         <input type="text" placeholder="Buscar"/>
                         <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "15px", padding: "4px",
                     boxSizing: "border-box", transform: "translateY(-50%)"}}/>
-                        <button onClick={openModal} className="btn-navbar" style={{display:"none"}}>Login</button>
+                        <button onClick={openModal} className="btn-navbar">Login</button>
                     </div>
-                    <div className="user-dropdown nav-box">
+                    <div className="user-dropdown nav-box" style={{display: "none"}}>
                         <img src={userImg} alt="" className="user-img"/>
                         <div className="user-dropdown-content">
                             <ul>
