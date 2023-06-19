@@ -23,6 +23,7 @@ const Perfil = () => {
                     <div className="perfil-destaques-botoes">
                             <button>Edição digital de imagens</button>
                             <button>Modelagem tridimesional</button>
+                            <button id="destaques" style={{backgroundColor:"#E4623E", color:"white", fontWeight:"bold"}}>+</button>
                     </div>
                     <div className="perfil-destaques-cards">
                         <div className="destaques-cards-org">

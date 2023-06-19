@@ -1,5 +1,10 @@
 import Casa_img from "../media/casa.png"
 import Janela_img from "../media/home-inicio-img.svg"
+import iconAnim from "../media/iconanim.svg"
+import iconEdi from "../media/iconedi.svg"
+import iconIlus from "../media/iconilus.svg"
+import iconMod from "../media/iconmod.svg"
+import iconTudo from "../media/icontudo.svg"
 
 const Home = () => {
     return (
@@ -10,11 +15,11 @@ const Home = () => {
                         <button className="active" id="publi-btn">Publicações recentes
                             <div className="publi-drop">
                                 <ul>
-                                    <li>Tudo</li>
-                                    <li>Modelagem 3D</li>
-                                    <li>Animações</li>
-                                    <li>Ilustrações</li>
-                                    <li>Edição de Imagens</li>
+                                    <li> <img src={iconTudo} alt="" />Tudo</li>
+                                    <li> <img src={iconMod} alt="" />Modelagem 3D</li>
+                                    <li> <img src={iconAnim} alt="" />Animações</li>
+                                    <li> <img src={iconIlus} alt="" />Ilustrações</li>
+                                    <li> <img src={iconEdi} alt="" />Edição de Imagens</li>
                                 </ul>
                             </div>
                         </button>
@@ -160,109 +165,6 @@ const Home = () => {
                             </div>
                        </div>
                     </div>
-                    {/* <div className="Publicacao">
-                        <h2 style={{fontSize: "30px", marginLeft: "30px"}}>Publicações Recentes</h2>
-                        <div className="publi-row">
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="publi-row">
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="publi-box">
-                                <div className="titulo">
-                                    <h2>Uma bela casinha samurai</h2>
-                                    <h3>Wermyson Pinheiro</h3>
-                                </div>
-                                <div className="content">
-                                    <img src={Casa_img}/>
-                                    <span style={{marginTop: "10px"}}>
-                                    Nessa atividade eu resolvi fazer um cenário de filme antigo japonês sobre samurais, não é de nenhum filme específico, mas sim o estereotipo das obras. É possível ver alguns elementos, como a katana, um arco e flecha, e outras coisinhas pelo cenário.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </>

@@ -1,5 +1,6 @@
 import Casa_img from "../media/casa.png"
 import {FaUserAlt} from "react-icons/fa"
+import {MDCCheckbox} from "@material/checkbox"
 
 const Disciplina = () => {
     return (
@@ -7,50 +8,55 @@ const Disciplina = () => {
             <div className="disc">
                 <h2>MODELAGEM TRIDIMENSIONAL</h2>
                 <div>
-                    <button className="btn-filtros">Filtrar <div className="filtro-drop">
-                        <div className="drop">
-                            <div className="drop-organizer">
-                                <div className="data-envio">
-                                    <h4>Data de Envio</h4>
-                                    <ul>
-                                        <li>Hoje</li>
-                                        <li>Esta semana</li>
-                                        <li>Últimos 15 dias</li>
-                                        <li>Este mês</li>
-                                    </ul>
+                    <button className="btn-filtros">Filtrar 
+                        <div className="filtro-drop">
+                            <div className="drop">
+                                <div className="drop-org">
+                                    <div className="drop-data-envio">
+                                        <ul>
+                                            <li><h4>Data de envio</h4></li>
+                                            <li>Hoje</li>
+                                            <li>Esta semana</li>
+                                            <li>Últimos 15 dias</li>
+                                            <li>Este mês</li>
+                                        </ul>
+                                    </div>
+                                    <div className="drop-ordenar">
+                                        <ul>
+                                            <li><h4>Ordenar por</h4></li>
+                                            <li>Mais antigo</li>
+                                            <li>Mais recente</li>
+                                        </ul>
+                                    </div>
+                                    <div className="drop-midia">
+                                        <ul>
+                                            <li>
+                                                <h4>Mídia</h4>
+                                            </li>
+                                           <li><input type="checkbox"
+                                            class="mdc-checkbox__native-control"
+                                            id="checkbox-1"/> PDFs</li>
+
+                                            <li> <input type="checkbox"
+                                            class="mdc-checkbox__native-control"
+                                            id="checkbox-2"/>Vídeos</li>
+
+                                            <li> <input type="checkbox"
+                                            class="mdc-checkbox__native-control"
+                                            id="checkbox-3"/>Imagens</li>
+
+                                            <li> <input type="checkbox"
+                                            class="mdc-checkbox__native-control"
+                                            id="checkbox-4"/>Todos os tipos</li>
+                                        </ul>
+                                    </div>
+                                    <div className="drop-pesquisa">
+                                        <input type="text" placeholder="Buscar por palavras-chave..."/>
+                                    </div>
                                 </div>
-                                <div className="ordem">
-                                    <h4>Ordenar por</h4>
-                                    <ul>
-                                        <li>Mais antigo</li>
-                                        <li>Mais recente</li>
-                                    </ul>
-                                </div>
-                                <div className="midia">
-                                    <h4>Mídia</h4>
-                                    <div className="midia-box">
-                                        <input type="checkbox" />
-                                        <p>PDFs</p>
-                                    </div>
-                                    <div className="midia-box">
-                                        <input type="checkbox" />
-                                        <p>Vídeos</p>
-                                    </div>
-                                    <div className="midia-box">
-                                        <input type="checkbox" />
-                                        <p>Imagens</p>
-                                    </div>
-                                    <div className="midia-box">
-                                        <input type="checkbox" />
-                                        <p>Todos os tipos</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="palavras">
-                                <input type="text" placeholder="Buscar por palavras-chave..."/>
                             </div>
                         </div>
-                    </div></button>
+                    </button>
                     <button className="btn-data">Data
                         <div className="data-drop">
                             <ul>

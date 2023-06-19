@@ -61,15 +61,21 @@ nav{
 .navbar .nav-box ul{
   margin-left: 10%;
   height: 100%;
+  padding: 0px;
+  margin-top: 0px;
 }
 
 .navbar .nav-box ul li{
   margin-right: 20px;
   font-weight: bold;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navbar .nav-box ul li:hover{
   border-bottom: 2px solid #E4623E;
+  border-top: 2px solid #E4623E;
 }
 
 .navbar .nav-box{
@@ -155,7 +161,7 @@ nav{
 
 .disc-drop{
   background-color: white;
-  border: 1px solid #E4623E;
+  border: 2px solid #E4623E;
   position: absolute;
   border-radius: 2px 8px 8px;
   display: none;
@@ -175,7 +181,13 @@ nav{
 .disc-drop ul li{
   cursor: pointer;
   color: #E4623E;
+  padding: 5px;
+  margin: 5px;
+}
 
+.disc-drop ul li:hover{
+  border-bottom: 2px solid #E4623E;
+  border-top: 2px solid #E4623E;
 }
 
 .Container{
@@ -484,20 +496,29 @@ nav{
   .publi-drop{
     background-color: white;
     position: absolute;
-    border: 1px solid #E4623E;
+    border: 2px solid #E4623E;
     border-radius: 2px 8px 8px;
     display: none;
   }
   .publi-drop ul{
     display: flex;
     flex-direction: column;
-    padding-right: 5%;
+    margin: 0px;
+    padding: 15px;
   }
   .publi-drop ul li{
     padding: 5px;
+    display: flex;
+    align-items: center;
   }
+
+  .publi-drop ul li img{
+    margin-right: 10px;
+  }
+
 .publi-drop ul li:hover{
-  border-bottom: 1px solid #E4623E;
+  border-bottom: 2px solid #E4623E;
+  border-top: 2px solid #E4623E;
 }
 
   #publi-btn:hover .publi-drop{
@@ -986,8 +1007,8 @@ footer{
   position: absolute;
   border: 1px solid #E4623E;
   border-radius: 2px 8px 8px;
-  z-index: 3;
   display: none;
+  z-index: 3;
 }
 
 .btn-filtros:hover .filtro-drop{
@@ -997,45 +1018,48 @@ footer{
 .filtro-drop .drop{
   display: flex;
   flex-direction: column;
-  color: #E4623E;
 }
-.filtro-drop .drop .drop-organizer{
+
+.filtro-drop .drop .drop-org{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.filtro-drop .drop div{
-  padding: 1% ;
+.filtro-drop .drop .drop-org .data-drop-envio, .drop-ordenar, .drop-midia{
+  padding: 5px;
 }
 
-.filtro-drop .drop ul, .midia{
+.drop ul{
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 
-.filtro-drop .drop .midia .midia-box{
-  display: flex;
-  flex-direction: row;
+.drop ul li{
+  margin: 5px;
 }
 
-.filtro-drop .drop .midia .midia-box p,input{
-  margin: 0px;
-  padding: 0px;
+.drop ul li:hover{
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.filtro-drop .drop .midia .midia-box input{
- margin-right: 5px;
+.drop h4{
+  margin-bottom: 10px;
 }
 
-.filtro-drop .drop .palavras{
-  padding: 15px;
+.drop-pesquisa{
+  width: 100%;
+  align-items: center;
 }
 
-.filtro-drop .drop .palavras input{
-  padding: 15px;
-  border-radius: 10px;
+.drop-pesquisa input{
   width: 80%;
-  border: 2px solid #808080;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #CBCBCB;
+  border-radius: 7px;
 }
 
 .data-drop{
