@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Sobre from './components/Sobre';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Perfil from './components/Perfil';
+import Perfil_editar from './components/Perfil_editar';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/exposicao" element={<Exposicao />}/>
           <Route path="/cadastro" element={<Cadastro />}/>
           <Route path="/perfis" element={<Perfil />}/>
+          <Route path="perfil_editar" element={<Perfil_editar />}/>
         </Routes>
       </Router>
       <Footer />

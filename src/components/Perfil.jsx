@@ -1,5 +1,7 @@
 import perfilImg from "../media/perfil-img.jpg"
 import cabineImg from "../media/destaques-cabine.png"
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Perfil = () => {
     return(
@@ -10,7 +12,7 @@ const Perfil = () => {
                     <div className="perfil-texto">
                         <div className="perfil-texto-titulo">
                             <h1>Gisele Brito</h1>
-                            <button>Editar perfil</button>
+                            <Link className="lik-route" to="/Perfil_editar"><button>Editar perfil</button></Link>
                             <button>...</button>
                         </div>
                         <p>Sou estudante Universitario do curso de Design Digital do 4º semestre. Adoro modelagem 3d, animações e edição de vídeo. Também sou um grande entusiasta de edição de imagens.</p>

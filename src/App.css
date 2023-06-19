@@ -1135,6 +1135,7 @@ footer{
   cursor: pointer;
 }
 
+
 .btn-perfil-trabalho{
   font-size: 18px;
   border-radius: 9px;
@@ -1244,6 +1245,199 @@ footer{
   font-size: 15px;
   border: none;
   padding: 10px;
+}
+
+.destaques-card-footer button:hover{
+  cursor: pointer;
+}
+
+.perfil-edi-inicio{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  color: white;
+
+  justify-content: space-evenly;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5%;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner h3{
+  margin: 0px;
+  padding: 0px;
+
+  color: black;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner p{
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner button{
+  background-color: #E4623E;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 10px;
+
+  cursor: pointer;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner .btn-remover{
+  background-color: #808080;
+}
+
+.perfil-edi-inicio .perfil-edi-inicio-conteudo img{
+  border-radius: 10px;
+}
+
+.perfil-edi-conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil-edi-conteudo .perfil-edi-form{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  flex-wrap: wrap;
+}
+
+.perfil-edi-conteudo .perfil-edi-form div{
+  margin: 15px;
+}
+
+.perfil-edi-conteudo .perfil-edi-form input{
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid #808080;
+}
+
+.perfil-edi-conteudo .perfil-edi-form p{
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+}
+
+.perfil-edi-conteudo .perfil-edi-form .form-descricao textarea{
+  border-radius: 10px;
+  border-color: #808080;
+  width: 100%;
+
+  padding: 1%;
+}
+
+.perfil-container .perfil-edi-destaques{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org .perfil-edi-destaques-botoes{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+
+.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org .perfil-edi-destaques-botoes button{
+  color: #E4623E;
+  background-color: white;
+  border: 2px solid #E4623E;
+  font-size:  24px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 2%;
+}
+
+.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org button:hover{
+  cursor: pointer;
+  background-color:#E4623E;
+  color: white;
+  transition: 0.3s;
+}
+
+
+.perfil-edi-destaques-org .destaques-edi-card{
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1%;
+  margin-top: 3%;
+  margin-right: 1%;
+}
+
+.destaques-edi-cards-org{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destaques-edi-card-header{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.destaques-edi-card-header p{
+  margin: 0px;
+  padding: 0px;
+  color: #393939;
+}
+
+.destaques-edi-card-header h3{
+  margin: 0px;
+  padding: 0px;
+}
+
+.destaques-edi-card .destaques-edi-card-content img{
+  width: 100%;
+}
+
+.destaques-edi-card-footer button{
+  background-color: #E4623E;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 3%;
 }
 
 .destaques-card-footer button:hover{
