@@ -34,7 +34,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -49,7 +48,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -64,7 +62,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -79,7 +76,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -94,7 +90,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -109,7 +104,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -124,7 +118,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -139,7 +132,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>
@@ -154,7 +146,6 @@ const Home = () => {
                                         <h3>Uma bela casinha samurai</h3>
                                         <h4>Wermyson Pinheiro</h4>
                                     </div>
-                                    <span style={{fontWeight:"bold"}}>^</span>
                                 </div>
                                 <div className="publi-card-body">
                                     <img src={Casa_img}/>

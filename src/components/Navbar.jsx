@@ -11,6 +11,7 @@ Modal.setAppElement("#root");
 const Navbar = () => {
 
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [modalPerfilIsOpen, setPerfilIsOpen] = useState(false)
 
     function openModal() {
         setIsOpen(true);
@@ -18,6 +19,14 @@ const Navbar = () => {
 
     function closeModal() {
         setIsOpen(false);
+    }
+
+    function openPerfilModal(){
+        setPerfilIsOpen(true);
+    }
+
+    function closePerfilModal(){
+        setPerfilIsOpen(false);
     }
 
     return (
@@ -63,12 +72,45 @@ const Navbar = () => {
                     </div>
                 </div>
             </Modal>
+            <Modal
+                isOpen={modalPerfilIsOpen}
+                onRequestClose={closePerfilModal}
+                contentLabel="Configurações"
+                overlayClassName={"modal-overlay perfil"}
+                className={"modal-perfil-content"}
+            >
+                <div className="modal-perfil-body">
+                    <h4>Configurações</h4>
+                    <div className="modal-perfil-form">
+                        <div className="modal-perfil-form-item">
+                            <p>Nome</p>
+                            <input type="text" />
+                        </div>
+                        <div className="modal-perfil-form-item">
+                            <p>Email</p>
+                            <input type="email" />
+                        </div>
+                        <div className="modal-perfil-form-item">
+                            <p>Senha</p>
+                            <input type="password" />
+                        </div>
+                        <div className="modal-perfil-form-item">
+                            <p>Confirmar senha</p>
+                            <input type="password" />
+                        </div>
+                        <div className="modal-perfil-footer">
+                            <button>Salvar</button>
+                            <button className="btn-cancelar">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </Modal>
             <nav>
                 <div className="navbar">
                     <div className="nav-box" style={{width:"10%"}}>
                         <img src={Logo_h}/>
                     </div>
-                    <div className="nav-box" style={{width:"50%"}}>
+                    <div className="nav-box" style={{width:"60%"}}>
                         <ul>
                             <li><Link className="link-route" to="/">Home</Link></li>
                             <li id="disc"><Link className="link-route" to="/disciplina">Disciplinas</Link>
@@ -86,20 +128,22 @@ const Navbar = () => {
                         </ul>
                         <Link className="link-route btn-expor" to="/exposicao">Expor trabalho</Link>
                     </div>
-                    <div className="nav-box" style={{ width: "40%", position: "relative", height: "45px"}}>
-                        <input type="text" placeholder="Buscar"/>
-                        <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "15px", padding: "4px",
+                    <div className="nav-box" style={{ width: "30%", position: "relative", height: "45px"}}>
+                        <input type="text" placeholder="Buscar" style={{width:"100%"}}/>
+                        <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "10px", padding: "4px",
                     boxSizing: "border-box", transform: "translateY(-50%)"}}/>
-                        <button onClick={openModal} className="btn-navbar">Login</button>
+                        <button onClick={openModal} className="btn-navbar" style={{display:"none"}}>Login</button>
                     </div>
-                    <div className="user-dropdown nav-box" style={{display: "none"}}>
-                        <img src={userImg} alt="" className="user-img"/>
-                        <div className="user-dropdown-content">
-                            <ul>
-                                <li>Ver perfil</li>
-                                <li>Configurações</li>
-                                <li>Sair</li>
-                            </ul>
+                    <div className="nav-box">
+                        <div className="user-dropdown">
+                            <img src={userImg} alt="" id="userImg" />
+                            <div className="user-dropdown-content">
+                                <ul>
+                                    <li>Ver perfil</li>
+                                    <li><button onClick={openPerfilModal}>Configurações</button></li>
+                                    <li className="user-dropdown-sair">Sair</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
