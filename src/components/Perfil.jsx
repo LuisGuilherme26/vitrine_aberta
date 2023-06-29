@@ -3,7 +3,7 @@ import cabineImg from "../media/destaques-cabine.png"
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react'
 import Modal from 'react-modal'
-import { MDCCheckbox } from "@material/checkbox";
+// import { MDCCheckbox } from "@material/checkbox";
 
 Modal.setAppElement("#root");
 

@@ -1,6 +1,6 @@
 import Casa_img from "../media/casa.png"
-import {FaUserAlt} from "react-icons/fa"
-import {MDCCheckbox} from "@material/checkbox"
+import { FaUserAlt } from "react-icons/fa"
+// import { MDCCheckbox } from "@material/checkbox"
 
 const Disciplina = () => {
     return (
