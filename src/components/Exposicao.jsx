@@ -28,8 +28,10 @@ const Exposicao = () => {
         }
 
         let span = createElement('span', { style: { color: colorText, fontSize: size, fontWeight: weight } }, text);
+        let span = createElement('span', { style: { color: colorText, fontSize: size, fontWeight: weight } }, text.target.value);
 
         setText((oldArray) => ([oldArray, span]));
+        setText((oldArray) => ([...oldArray, span]));
         setIsBold(false);
         closeModal();
     }
@@ -58,6 +60,9 @@ const Exposicao = () => {
                 setSize("32px")
                 break
         }
+    function handleSize(e) {
+        let size = e.target.value + "px";
+        setSize(size)
     }
 
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -111,6 +116,7 @@ const Exposicao = () => {
                                     contentLabel="Example Modal"
                                     overlayClassName="modal-overlay"
                                     className="modal-content"
+                                    className="modal-content exp-texto"
                                 >
                                     <h2>Adicionar texto</h2>
 
@@ -131,6 +137,41 @@ const Exposicao = () => {
                                     </label>
                                     <button onClick={() => { addText(valueText) }}>Adicionar texto</button>
                                     <button onClick={closeModal}>Fechar</button>
+                                    <div className="box">
+                                        <div className="exp-texto-box">
+                                            <h2>Adicionar texto</h2>
+                                            <textarea placeholder="Digite seu texto aqui" onChange={handleText} cols="30" rows="10" style={{ resize: "none" }}></textarea>
+                                            <div>
+                                                <input type="checkbox" onChange={handleBold} style={{ marginTop: "15px" }}/>
+                                                <span>Negrito</span>
+                                            </div>
+                                            <label style={{ marginTop: "5px" }}>
+                                                <select name="size" onChange={handleSize}>
+                                                    <option value="14">14</option>
+                                                    <option value="16">16</option>
+                                                    <option value="18">18</option>
+                                                    <option value="20">20</option>
+                                                    <option value="22">22</option>
+                                                    <option value="24">24</option>
+                                                    <option value="26">26</option>
+                                                    <option value="28">28</option>
+                                                    <option value="30">30</option>
+                                                    <option value="32">32</option>
+                                                </select>
+                                                Tamanho da letra
+                                            </label>
+                                        </div>
+                                        <div className="exp-texto-box" style={{ alignItems: "center" }}>
+                                            <SketchPicker
+                                                color={colorText}
+                                                onChangeComplete={handleColorText}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="exp-texto-btn">
+                                        <button onClick={() => { addText(valueText) }} style={{ backgroundColor: "#E4623E" }}>Adicionar texto</button>
+                                        <button onClick={closeModal} style={{ backgroundColor: "#808080" }}>Fechar</button>
+                                    </div>
                                 </Modal>
                                 <button className="box">
                                     <img src={link} />
