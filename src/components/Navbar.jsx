@@ -128,21 +128,21 @@ const Navbar = () => {
                         </ul>
                         <Link className="link-route btn-expor" to="/exposicao">Expor trabalho</Link>
                     </div>
-                    <div className="nav-box" style={{ width: "30%", position: "relative", height: "45px"}}>
-                        <input type="text" placeholder="Buscar" style={{width:"100%"}}/>
+                    <div className="nav-box" style={{ width: "60%", position: "relative", height: "45px"}}>
+                        <input type="text" placeholder="Buscar" style={{width:"75%"}}/>
                         <FaSearch  style={{ height: "1.5rem", width: "1.5rem", position: "absolute", top: "50%", left: "10px", padding: "4px",
                     boxSizing: "border-box", transform: "translateY(-50%)"}}/>
                         <button onClick={openModal} className="btn-navbar" style={{display:"none"}}>Login</button>
-                    </div>
-                    <div className="nav-box">
-                        <div className="user-dropdown">
-                            <img src={userImg} alt="" id="userImg" />
-                            <div className="user-dropdown-content">
-                                <ul>
-                                    <li>Ver perfil</li>
-                                    <li><button onClick={openPerfilModal}>Configurações</button></li>
-                                    <li className="user-dropdown-sair">Sair</li>
-                                </ul>
+                        <div className="nav-box">
+                            <div className="perfil-drop">
+                                <img src={userImg} alt="" />
+                                <div className="drop-content">
+                                    <ul>
+                                        <li>Ver perfil</li>
+                                        <li><button onClick={openPerfilModal}>Configurações</button></li>
+                                        <li style={{borderBottom:"0px"}}>Sair</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

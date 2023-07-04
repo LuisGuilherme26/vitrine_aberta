@@ -126,63 +126,55 @@ nav{
   cursor: pointer;
 }
 
-.user-dropdown{
-  display: flex;
-  flex-direction: column;
+.peril-drop{
+  position: relative;
+  display: inline-block;
 }
 
-.user-dropdown img:hover{
+.perfil-drop .drop-content{
+  display: none;
+  position: absolute;
+
+  background-color: white;
+  border: 2px solid #E4623E;
+  border-radius: 0px 10px 10px;
+}
+
+.perfil-drop img{
   cursor: pointer;
 }
 
-.user-dropdown-content{
- position: absolute;
- background-color: white;
- 
- margin-top: 5%;
-
- border: 1px solid #E4623E;
- border-radius: 0px 10px 10px;
-
- display: block;
-}
-
-#userImg:hover .user-dropdown-content{
-  display: none;
-}
-
-
-.user-dropdown .user-dropdown-content ul{
+.perfil-drop .drop-content ul{
   display: flex;
   flex-direction: column;
-  
-  margin: 0px;
-}
 
-.user-dropdown .user-dropdown-content ul li{
-  color: #E4623E;
   text-align: center;
   margin: 0px;
+}
+
+.perfil-drop .drop-content ul li{
+  color: #E4623E;
   border-bottom: 1px solid #E4623E;
+
+  width: 100%;
+  margin: 0px;
+
+  cursor: pointer;
 }
 
-.user-dropdown .user-dropdown-content .user-dropdown-sair{
-  border: none;
-}
-
-.user-dropdown .user-dropdown-content ul li button{
+.perfil-drop .drop-content ul li button{
   background: none;
   border: none;
 
   font-size: 16px;
-  font-weight: bold;
   color: #E4623E;
+  font-weight: bold;
 
   cursor: pointer;
 }
 
-.user-dropdown .user-dropdown-content ul li:hover{
-  cursor: pointer;
+.perfil-drop:hover .drop-content{
+  display: block;
 }
 
 .disc-drop{
