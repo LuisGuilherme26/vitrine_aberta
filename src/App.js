@@ -7,8 +7,12 @@ import Disciplina from './components/Disciplina';
 import Footer from './components/Footer';
 import Sobre from './components/Sobre';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Perfil from './components/Perfil';
-import Perfil_editar from './components/Perfil_editar';
+// import Perfil from './components/Perfil';
+// import Perfil_editar from './components/Perfil_editar';
+import Samurai from './components/Samurai';
+import Halloween from './components/Halloween';
+import Mulheres from './components/Mulheres';
+import Garota from './components/Garota';
 
 function App() {
   return (
@@ -22,8 +26,11 @@ function App() {
           <Route path="/sobre" element={<Sobre />}/>
           <Route path="/exposicao" element={<Exposicao />}/>
           <Route path="/cadastro" element={<Cadastro />}/>
-          <Route path="/perfis" element={<Perfil />}/>
-          <Route path="perfil_editar" element={<Perfil_editar />}/>
+          {/* <Route path="/perfis" element={<Perfil />}/> */}
+          <Route path="/samurai" element={<Samurai />}></Route>
+          <Route path="/halloween" element={<Halloween />}></Route>
+          <Route path="/mulher" element={<Mulheres />}></Route>
+          <Route path="/garota" element={<Garota />}></Route>
         </Routes>
       </Router>
       <Footer />
