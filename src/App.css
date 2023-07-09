@@ -2,13 +2,11 @@ body {
   background-color: white;
 }
 
-.link-route{
 .link-route {
   text-decoration: none;
   color: #000;
 }
 
-.modal-overlay{
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -35,7 +33,6 @@ ul {
   display: flex;
 }
 
-nav{
 nav {
   width: 100%;
   position: fixed;
@@ -43,7 +40,6 @@ nav {
   z-index: 2;
 }
 
-.navbar{
 .navbar {
   background-color: #FFFFFF;
   width: 100%;
@@ -62,7 +58,6 @@ nav {
   margin-top: 0px;
 }
 
-.navbar .nav-box ul li{
 .navbar .nav-box ul li {
   margin-right: 20px;
   font-weight: bold;
@@ -71,7 +66,6 @@ nav {
   padding-bottom: 10px;
 }
 
-.navbar .nav-box #disc ul li:hover{
 .navbar .nav-box #disc ul li:hover {
   border-bottom: 2px solid #E4623E;
   border-top: 2px solid #E4623E;
@@ -84,7 +78,6 @@ nav {
   width: 15%;
 }
 
-.navbar .btn-expor{
 .navbar .btn-expor {
   font-size: 14px;
   padding: 10px 20px;
@@ -95,12 +88,10 @@ nav {
   color: #E4623E;
 }
 
-.navbar .btn-expor:hover{
 .navbar .btn-expor:hover {
   cursor: pointer;
 }
 
-.navbar input{
 .navbar input {
   width: 75%;
   height: 50px;
@@ -114,7 +105,6 @@ nav {
   box-sizing: border-box;
 }
 
-.navbar input::placeholder{
 .navbar input::placeholder {
   color: black;
   font-size: 20px;
@@ -124,7 +114,6 @@ nav {
   top: 28%;
 }
 
-.btn-navbar{
 .btn-navbar {
   color: #fff;
   background-color: #E4623E;
@@ -137,82 +126,57 @@ nav {
   cursor: pointer;
 }
 
-.user-dropdown{
-.user-dropdown {
-  display: flex;
-  flex-direction: column;
+.peril-drop{
+  position: relative;
+  display: inline-block;
 }
 
-.user-dropdown img:hover{
-.user-dropdown img:hover {
-  cursor: pointer;
-}
-
-.user-dropdown-content{
- position: absolute;
- background-color: white;
- 
- margin-top: 5%;
-.user-dropdown-content {
+.perfil-drop .drop-content{
+  display: none;
   position: absolute;
+
   background-color: white;
-
- border: 1px solid #E4623E;
- border-radius: 0px 10px 10px;
-  margin-top: 5%;
-
- display: block;
-  border: 1px solid #E4623E;
+  border: 2px solid #E4623E;
   border-radius: 0px 10px 10px;
-
-  display: block;
 }
 
 #userImg:hover .user-dropdown-content{
-#userImg:hover .user-dropdown-content {
   display: none;
 }
 
 
 .user-dropdown .user-dropdown-content ul{
-.user-dropdown .user-dropdown-content ul {
   display: flex;
   flex-direction: column;
   
-
   margin: 0px;
 }
 
 .user-dropdown .user-dropdown-content ul li{
-.user-dropdown .user-dropdown-content ul li {
   color: #E4623E;
-  text-align: center;
-  margin: 0px;
   border-bottom: 1px solid #E4623E;
-}
 
-.user-dropdown .user-dropdown-content .user-dropdown-sair{
-  border: none;
+  width: 100%;
+  margin: 0px;
+
+  cursor: pointer;
 }
 
 .user-dropdown .user-dropdown-content ul li button{
-.user-dropdown .user-dropdown-content ul li button {
   background: none;
   border: none;
 
   font-size: 16px;
-  font-weight: bold;
   color: #E4623E;
+  font-weight: bold;
 
   cursor: pointer;
 }
 
 .user-dropdown .user-dropdown-content ul li:hover{
-.user-dropdown .user-dropdown-content ul li:hover {
   cursor: pointer;
 }
 
-.disc-drop{
 .disc-drop {
   background-color: white;
   border: 2px solid #E4623E;
@@ -220,13 +184,10 @@ nav {
   border-radius: 2px 8px 8px;
   display: none;
 }
-#disc:hover .disc-drop{
-
 #disc:hover .disc-drop {
   display: block;
 }
 
-.disc-drop ul{
 .disc-drop ul {
   display: flex;
   flex-direction: column;
@@ -234,7 +195,6 @@ nav {
   padding: 0px;
 }
 
-.disc-drop ul li{
 .disc-drop ul li {
   cursor: pointer;
   color: #E4623E;
@@ -242,13 +202,11 @@ nav {
   margin: 5px;
 }
 
-.disc-drop ul li:hover{
 .disc-drop ul li:hover {
   border-bottom: 2px solid #E4623E;
   border-top: 2px solid #E4623E;
 }
 
-.Container{
 .Container {
   width: 100%;
   height: 100%;
@@ -258,7 +216,6 @@ nav {
   display: flex;
 }
 
-.Logo-box{
 .Logo-box {
   width: 33.3%;
   background-color: #E4623E;
@@ -269,12 +226,10 @@ nav {
   justify-content: center;
 }
 
-.Logo-box img{
 .Logo-box img {
   width: 52%;
 }
 
-.login-conteudo{
 .login-conteudo {
   display: flex;
   flex-direction: column;
@@ -283,19 +238,16 @@ nav {
   width: 66.6%;
 }
 
-.login-conteudo-body .login-formulario{
 .login-conteudo-body .login-formulario {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.login-formulario p{
 .login-formulario p {
   color: #808080;
 }
 
-.login-conteudo-body .login-formulario .input-login{
 .login-conteudo-body .login-formulario .input-login {
   margin: 0px;
   padding: 15px;
@@ -303,13 +255,11 @@ nav {
   border: 1px solid #E4623E;
 }
 
-.login-conteudo-body .login-formulario p{
 .login-conteudo-body .login-formulario p {
   color: #393939;
   font-size: 15px;
 }
 
-.login-conteudo-footer button{
 .login-conteudo-footer button {
   margin-right: 15px;
   padding: 10px 20px;
@@ -320,27 +270,22 @@ nav {
   border: none;
 }
 
-.login-conteudo-footer .btn-cancelar{
 .login-conteudo-footer .btn-cancelar {
   background-color: #808080;
 }
 
-.login-conteudo-footer button:hover{
 .login-conteudo-footer button:hover {
   cursor: pointer;
 }
 
-.login-conteudo-footer p{
 .login-conteudo-footer p {
   color: #808080;
 }
 
-.login-conteudo-footer p span{
 .login-conteudo-footer p span {
   font-weight: bold;
 }
 
-.login-conteudo-footer span:hover{
 .login-conteudo-footer span:hover {
   cursor: pointer;
 }
@@ -355,8 +300,6 @@ nav {
   margin-top: 130px;
   padding: 2%;
 }
-.Login-content{
-
 .Login-content {
   width: calc(66.6% - 100px);
   height: 100%;
@@ -365,7 +308,6 @@ nav {
   padding: 5%;
 }
 
-.Login-content .content-body{
 .Login-content .content-body {
   height: 55%;
   display: flex;
@@ -373,26 +315,22 @@ nav {
   justify-content: center;
 }
 
-.login-conteudo{
 .login-conteudo {
   display: flex;
   flex-direction: column;
 }
 
-.login-conteudo .login-formulario div{
 .login-conteudo .login-formulario div {
   display: flex;
   flex-direction: column;
 }
 
-.login-conteudo .login-formulario div a{
 .login-conteudo .login-formulario div a {
   color: #717171;
   text-decoration: none;
   font-weight: 500;
 }
 
-.login-conteudo .login-formulario .login-formulario-botoes{
 .login-conteudo .login-formulario .login-formulario-botoes {
   display: flex;
   flex-direction: row;
@@ -400,7 +338,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.login-conteudo .login-formulario .login-formulario-botoes button{
 .login-conteudo .login-formulario .login-formulario-botoes button {
   background-color: #E4623E;
   border: none;
@@ -415,7 +352,6 @@ nav {
   margin-right: 10px;
 }
 
-.login-conteudo .login-formulario .login-formulario-botoes .btn-cancelar{
 .login-conteudo .login-formulario .login-formulario-botoes .btn-cancelar {
   background-color: #808080;
   border: none;
@@ -430,11 +366,9 @@ nav {
   margin-right: 10px;
 }
 
-.login-conteudo .login-formulario span{
 .login-conteudo .login-formulario span {
   color: #393939;
 }
-.login-conteudo .login-formulario span a{
 
 .login-conteudo .login-formulario span a {
   font-weight: bold;
@@ -442,17 +376,14 @@ nav {
   text-decoration: none;
 }
 
-.content-body .box a:hover{
 .content-body .box a:hover {
   color: #393939;
 }
 
-.login-conteudo .login-formulario  label{
 .login-conteudo .login-formulario label {
   font-size: 22px;
 }
 
-.login-conteudo .login-formulario input{
 .login-conteudo .login-formulario input {
   padding: 20px;
   border-radius: 15px;
@@ -464,7 +395,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.cadastro-formulario input{
 .cadastro-formulario input {
   margin: 0px;
   padding: 15px;
@@ -475,24 +405,20 @@ nav {
   margin-bottom: 15px;
 }
 
-.content-body .box a{
 .content-body .box a {
   margin-bottom: 10%;
 }
 
-.content-footer{
 .content-footer {
   height: 20%;
   display: flex;
   flex-direction: column;
 }
 
-.content-footer div{
 .content-footer div {
   margin-top: 5%;
 }
 
-.content-footer > button{
 .content-footer>button {
   background-color: #E4623E;
   border: none;
@@ -506,13 +432,11 @@ nav {
   box-shadow: 5px 5px 5px #a6a6a6;
 }
 
-.content-footer span{
 .content-footer span {
   color: #717171;
   margin-left: 2px;
 }
 
-.content-footer a{
 .content-footer a {
   color: #717171;
   text-decoration: none;
@@ -520,12 +444,10 @@ nav {
   margin-left: 5px;
 }
 
-.content-footer a:hover{
 .content-footer a:hover {
   color: #393939;
 }
 
-.Container.cad{
 .Container.cad {
   width: 80%;
   background-color: #F7F1EF;
@@ -536,7 +458,6 @@ nav {
   margin: 110px 20px 20px 20px;
 }
 
-.Cad-content{
 .Cad-content {
   width: calc(66.6% - 100px);
   display: flex;
@@ -544,12 +465,10 @@ nav {
   padding: 25px 100px;
 }
 
-.Cad-content form{
 .Cad-content form {
   width: 100%;
 }
 
-.Cad-content .content-body{
 .Cad-content .content-body {
   width: 100%;
   display: flex;
@@ -557,14 +476,12 @@ nav {
   justify-content: center;
 }
 
-.Filtro{
 .Filtro {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.Filtro button{
 .Filtro .filtro-btn {
   border: 1px solid #E4623E;
   border-radius: 10px;
@@ -577,8 +494,6 @@ nav {
   font-size: 20px;
   font-weight: bold;
 }
-.Filtro button:hover{
-
 .Filtro .filtro-btn:hover {
   background-color: #E4623E;
   color: white;
@@ -784,25 +699,21 @@ h4 {
     padding: 1%;
   } */
 
-.publi-box .titulo{
 .publi-box .titulo {
   padding: 10px;
   position: relative;
 }
 
-.publi-box h3,h2{
 .publi-box h3,
 h2 {
   margin: 0;
   padding: 0;
 }
 
-.publi-box h3{
 .publi-box h3 {
   color: #4a4a4a;
 }
 
-.publi-box .content{
 .publi-box .content {
   display: flex;
   flex-direction: column;
@@ -811,7 +722,6 @@ h2 {
   font-weight: 600;
 }
 
-.modal-content.exp-texto{
 .modal-content.exp-texto {
   width: 40%;
   background-color: white;
@@ -820,12 +730,10 @@ h2 {
   z-index: 3;
 }
 
-.modal-content.exp-texto .box{
 .modal-content.exp-texto .box {
   display: flex;
 }
 
-.modal-content.exp-texto .exp-texto-box{
 .modal-content.exp-texto .exp-texto-box {
   display: flex;
   flex-direction: column;
@@ -833,7 +741,6 @@ h2 {
   padding: 10px;
 }
 
-.modal-content.exp-texto .exp-texto-box textarea{
 .modal-content.exp-texto .exp-texto-box textarea {
   width: 100%;
   height: 60%;
@@ -849,7 +756,6 @@ h2 {
   margin-left: 10px;
 }
 
-.modal-content.exp-texto .exp-texto-btn button{
 .modal-content.exp-texto .exp-texto-btn button {
   margin-right: 5px;
   padding: 10px 25px;
@@ -861,7 +767,6 @@ h2 {
   font-weight: bold;
 }
 
-.Exposicao{
 .Exposicao {
   margin-top: 85px;
   width: 100%;
@@ -870,7 +775,6 @@ h2 {
   align-items: center;
 }
 
-.Exposicao .box1{
 .Exposicao .box1 {
   width: 60%;
   height: 90vh;
@@ -880,7 +784,6 @@ h2 {
   flex-direction: column;
 }
 
-.Exposicao .box2{
 .Exposicao .box2 {
   width: 35%;
   height: 90vh;
@@ -890,7 +793,6 @@ h2 {
   flex-direction: column;
 }
 
-.Exposicao .box1 .organize{
 .Exposicao .box1 .organize {
   background-color: #fff;
   width: 100%;
@@ -900,7 +802,6 @@ h2 {
   /* overflow-y: scroll; */
 }
 
-.box1 .organize .box{
 .box1 .organize .box {
   display: flex;
   flex-direction: column;
@@ -908,12 +809,10 @@ h2 {
   margin: 15px 15px;
 }
 
-.box1 .organize .box:nth-child(){
 .box1 .organize .box:nth-child() {
   margin-bottom: 10px;
 }
 
-.Exposicao .titulo{
 .Exposicao .titulo {
   background-color: #eee;
   padding: 15px 30px;
@@ -921,7 +820,6 @@ h2 {
   border-radius: 20px 20px 0px 0px;
 }
 
-.box2 .anexos{
 .box2 .anexos {
   width: 100%;
   height: 45%;
@@ -931,12 +829,10 @@ h2 {
   z-index: 0;
 }
 
-.box2 .anexos .titulo{
 .box2 .anexos .titulo {
   border-radius: 20px 20px 0px 0px;
 }
 
-.box2 .anexos .ane-content{
 .box2 .anexos .ane-content {
   display: flex;
   flex-direction: column;
@@ -946,7 +842,6 @@ h2 {
   text-align: center;
 }
 
-.box2 .anexos .ane-content button{
 .box2 .anexos .ane-content button {
   background-color: #E4623E;
   border: none;
@@ -959,7 +854,6 @@ h2 {
   font-size: 15px;
 }
 
-.box2 .conteudo{
 .box2 .conteudo {
   width: 100%;
   height: 38%;
@@ -969,19 +863,16 @@ h2 {
   overflow: hidden;
 }
 
-.box2 .conteudo .titulo{
 .box2 .conteudo .titulo {
   border-radius: 0px;
 }
 
-.box2 .conteudo .con-content{
 .box2 .conteudo .con-content {
   display: flex;
   flex-direction: column;
   height: 80%;
 }
 
-.box2 .conteudo .con-content .row{
 .box2 .conteudo .con-content .row {
   display: flex;
   flex-direction: row;
@@ -989,7 +880,6 @@ h2 {
   height: 100%;
 }
 
-.conteudo .con-content .row .box{
 .conteudo .con-content .row .box {
   width: 33.3%;
   height: 100%;
@@ -1000,24 +890,20 @@ h2 {
   justify-content: center;
 }
 
-.conteudo .con-content button{
 .conteudo .con-content button {
   cursor: pointer;
   background-color: transparent;
 }
 
-.con-content .row .box span{
 .con-content .row .box span {
   font-weight: 500;
   font-size: 20px;
 }
 
-.con-content .row .box img{
 .con-content .row .box img {
   height: 32%;
 }
 
-.box2 > button{
 .box2>button {
   background-color: #E4623E;
   color: #fff;
@@ -1031,7 +917,6 @@ h2 {
   cursor: pointer;
 }
 
-.Disciplina{
 .Disciplina {
   margin-top: 85px;
   display: flex;
@@ -1040,14 +925,12 @@ h2 {
   position: relative;
 }
 
-.Disciplina .disc{
 .Disciplina .disc {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.Disciplina .disc button{
 .Disciplina .disc button {
   background-color: transparent;
   border: 2px solid #E4623E;
@@ -1059,12 +942,10 @@ h2 {
   border-radius: 10px;
 }
 
-.trab{
 .trab {
   margin-bottom: 20px;
 }
 
-.trab .trab-box{
 .trab .trab-box {
   width: 20%;
   background-color: transparent;
@@ -1074,25 +955,21 @@ h2 {
   padding: 15px;
 }
 
-.trab-box .titulo{
 .trab-box .titulo {
   padding: 10px;
   position: relative;
 }
 
-.trab-box h3,h2{
 .trab-box h3,
 h2 {
   margin: 0;
   padding: 0;
 }
 
-.trab-box h3{
 .trab-box h3 {
   color: #4a4a4a;
 }
 
-.trab-box .content{
 .trab-box .content {
   display: flex;
   flex-direction: column;
@@ -1101,14 +978,12 @@ h2 {
   font-weight: 600;
 }
 
-.aut{
 .aut {
   position: relative;
   margin: 0;
   padding: 0;
 }
 
-.aut-box{
 .aut-box {
   border: 3px solid #E4623E;
   border-radius: 15px;
@@ -1131,14 +1006,12 @@ h2 {
   bottom: 0;
 } */
 
-.aut-box h3{
 .aut-box h3 {
   position: absolute;
   left: 10px;
   top: 0;
 }
 
-.aut-box button{
 .aut-box button {
   background-color: transparent;
   border: 2px solid #E4623E;
@@ -1150,7 +1023,6 @@ h2 {
   border-radius: 10px;
 }
 
-.orange-bar{
 .orange-bar {
   width: 98.4%;
   height: 20%;
@@ -1162,48 +1034,40 @@ h2 {
   padding-left: 30px;
 }
 
-footer{
 footer {
   height: 320px;
   background-color: #F7F1EF;
   position: relative;
 }
 
-.f-content{
 .f-content {
   display: flex;
   width: 80%;
 }
 
-.f-content .f-box{
 .f-content .f-box {
   margin: 35px 45px;
   padding: 20px;
   color: #4a4a4a;
 }
 
-.f-content .f-box h2{
 .f-content .f-box h2 {
   font-size: 24px;
 }
 
-.f-content .f-box img{
 .f-content .f-box img {
   height: 80px;
 }
 
-.f-content .f-box{
 .f-content .f-box {
   color: #000;
   font-size: 20px;
 }
 
-.f-content .f-box p{
 .f-content .f-box p {
   font-size: 20px;
 }
 
-.modal-overlay.Login{
 .modal-overlay.Login {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -1211,13 +1075,11 @@ footer {
   right: 0;
   left: 0;
   z-index: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.modal-overlay.perfil{
 .modal-overlay.perfil {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -1225,13 +1087,11 @@ footer {
   right: 0;
   left: 0;
   z-index: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.modal-content.Login{
 .modal-content.Login {
   width: 90%;
   height: 75%;
@@ -1239,13 +1099,11 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 5px;
   margin-bottom: 1%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-perfil-content{
 .modal-perfil-content {
   background-color: white;
   padding: 3%;
@@ -1259,29 +1117,24 @@ footer {
   justify-content: center;
 }
 
-.modal-perfil-content .modal-perfil-body{
 .modal-perfil-content .modal-perfil-body {
   width: 80%;
 }
 
-.modal-perfil-content .modal-perfil-body h4{
 .modal-perfil-content .modal-perfil-body h4 {
   margin-bottom: 20px;
 }
 
-.modal-perfil-content .modal-perfil-body .modal-perfil-form{
 .modal-perfil-content .modal-perfil-body .modal-perfil-form {
   margin-left: 5%;
 }
 
-.modal-perfil-content .modal-perfil-body .modal-perfil-footer{
 .modal-perfil-content .modal-perfil-body .modal-perfil-footer {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
 }
 
-.modal-perfil-content .modal-perfil-body .modal-perfil-footer button{
 .modal-perfil-content .modal-perfil-body .modal-perfil-footer button {
   background-color: #E4623E;
   margin-right: 10px;
@@ -1294,14 +1147,10 @@ footer {
   cursor: pointer;
 }
 
-
-.modal-perfil-content .modal-perfil-body .modal-perfil-footer .btn-cancelar{
-  background-color:#808080;
 .modal-perfil-content .modal-perfil-body .modal-perfil-footer .btn-cancelar {
   background-color: #808080;
 }
 
-.modal-perfil-form-item input{
 .modal-perfil-form-item input {
   width: 100%;
   padding: 10px;
@@ -1309,12 +1158,10 @@ footer {
   border: 1px solid #E4623E;
 }
 
-.modal-perfil-form-item p{
 .modal-perfil-form-item p {
   margin: 5px;
 }
 
-.modal-overlay.disciplina{
 .modal-overlay.disciplina {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -1328,7 +1175,6 @@ footer {
   justify-content: center;
 }
 
-.modal-disc-content{
 .modal-disc-content {
   background-color: white;
   padding: 3%;
@@ -1342,17 +1188,13 @@ footer {
   justify-content: center;
 }
 
-.modal-disc-body{
 .modal-disc-body {
   width: 100%;
 }
 
-.modal-disc-body .modal-div-form{
 .modal-disc-body .modal-div-form {
   margin-left: 5%;
 }
-.modal-disc-body .modal-disc-form .modal-disc-form-item div{
-
 .modal-disc-body .modal-disc-form .modal-disc-form-item div {
   display: flex;
   flex: row;
@@ -1361,7 +1203,6 @@ footer {
   color: #E4623E;
 }
 
-.modal-disc-body .modal-disc-form .modal-disc-form-item{
 .modal-disc-body .modal-disc-form .modal-disc-form-item {
   width: 100%;
   display: flex;
@@ -1370,12 +1211,10 @@ footer {
   flex-wrap: wrap;
 }
 
-.modal-disc-body .modal-disc-form .modal-disc-adicionar label{
 .modal-disc-body .modal-disc-form .modal-disc-adicionar label {
   font-size: 12px;
 }
 
-.modal-disc-body .modal-disc-form .modal-disc-adicionar input{
 .modal-disc-body .modal-disc-form .modal-disc-adicionar input {
   width: 50%;
   padding: 10px 15px;
@@ -1383,14 +1222,12 @@ footer {
   border: 1px solid #E4623E;
 }
 
-.modal-disc-content .modal-disc-body .modal-disc-footer{
 .modal-disc-content .modal-disc-body .modal-disc-footer {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
 }
 
-.modal-disc-content .modal-disc-body .modal-disc-footer button{
 .modal-disc-content .modal-disc-body .modal-disc-footer button {
   background-color: #E4623E;
   margin-right: 10px;
@@ -1399,48 +1236,39 @@ footer {
   border: none;
   color: white;
   font-weight: bold;
-
   cursor: pointer;
 }
 
-.modal-disc-content .modal-disc-body .modal-disc-footer .btn-cancelar{
-  background-color:#808080;
 .modal-disc-content .modal-disc-body .modal-disc-footer .btn-cancelar {
   background-color: #808080;
 }
 
-.bg-cor-laranja{
 .bg-cor-laranja {
   background-color: #E4623E;
 }
 
-#sobre{
 #sobre {
   color: white;
   padding-top: 4%;
 }
 
-#sobre .sobre-titulo{
 #sobre .sobre-titulo {
   display: flex;
   margin-left: 4%;
   /* Alterar para alinhamento correto */
 }
-#sobre .sobre-o-que-e{
 
 #sobre .sobre-o-que-e {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#sobre .sobre-o-que-e .textos{
 
 #sobre .sobre-o-que-e .textos {
   width: 600px;
   max-width: 882px;
   margin-left: 4%;
 }
-#sobre .sobre-img{
 
 #sobre .sobre-img {
   width: 300;
@@ -1448,25 +1276,20 @@ footer {
   max-height: 412px;
   height: 312px;
 }
-#sobre .sobre-licenca{
 
 #sobre .sobre-licenca {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: url('./media/retangulo.svg');
-  aspect-ratio: 960/300;
+  /* aspect-ratio: 960/300; */
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   padding-bottom: 15%;
   margin-top: 4%;
-
 }
-#sobre .sobre-licenca .textos{
 
 #sobre .sobre-licenca .textos {
   color: black;
@@ -1474,7 +1297,6 @@ footer {
   max-width: 882px;
   margin-right: 4%;
 }
-#sobre .sobre-soft-livre{
 
 #sobre .sobre-soft-livre {
   display: flex;
@@ -1482,14 +1304,12 @@ footer {
   align-items: center;
 }
 
-#sobre .sobre-soft-livre .textos{
 #sobre .sobre-soft-livre .textos {
   width: 600px;
   max-width: 882px;
   margin-left: 4%;
 }
 
-.filtro-drop{
 .filtro-drop {
   background-color: white;
   position: absolute;
@@ -1499,61 +1319,51 @@ footer {
   z-index: 3;
 }
 
-.btn-filtros:hover .filtro-drop{
 .btn-filtros:hover .filtro-drop {
   display: block;
 }
 
-.filtro-drop .drop{
 .filtro-drop .drop {
   display: flex;
   flex-direction: column;
 }
 
-.filtro-drop .drop .drop-org{
 .filtro-drop .drop .drop-org {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.filtro-drop .drop .drop-org .data-drop-envio, .drop-ordenar, .drop-midia{
 .filtro-drop .drop .drop-org .data-drop-envio,
 .drop-ordenar,
 .drop-midia {
   padding: 5px;
 }
 
-.drop ul{
 .drop ul {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.drop ul li{
 .drop ul li {
   margin: 5px;
 }
 
-.drop ul li:hover{
 .drop ul li:hover {
   cursor: pointer;
   font-weight: bold;
 }
 
-.drop h4{
 .drop h4 {
   margin-bottom: 10px;
 }
 
-.drop-pesquisa{
 .drop-pesquisa {
   width: 100%;
   align-items: center;
 }
 
-.drop-pesquisa input{
 .drop-pesquisa input {
   width: 80%;
   padding: 10px;
@@ -1562,7 +1372,6 @@ footer {
   border-radius: 7px;
 }
 
-.data-drop{
 .data-drop {
   background-color: white;
   position: absolute;
@@ -1573,7 +1382,6 @@ footer {
   display: none;
 }
 
-.data-drop ul{
 .data-drop ul {
   display: flex;
   flex-direction: column;
@@ -1581,26 +1389,22 @@ footer {
   margin: 0px;
 }
 
-.data-drop ul li{
 .data-drop ul li {
   margin-bottom: 15px;
   font-weight: bold;
   padding: 5px;
 }
 
-.data-drop ul li:hover{
 .data-drop ul li:hover {
   cursor: pointer;
   background-color: #E4623E;
   color: white;
 }
 
-.btn-data:hover .data-drop{
 .btn-data:hover .data-drop {
   display: block;
 }
 
-.modal-overlay.editar{
 .modal-overlay.editar {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -1613,7 +1417,6 @@ footer {
   bottom: 0;
 }
 
-.modal-content.editar{
 .modal-content.editar {
   width: 40%;
   height: 45%;
@@ -1623,7 +1426,6 @@ footer {
   z-index: 3;
 }
 
-.modal-content.editar .modal-box-form{
 .modal-content.editar .modal-box-form {
   display: flex;
   flex-direction: column;
@@ -1632,25 +1434,21 @@ footer {
   align-items: center;
 }
 
-.modal-content.editar form{
 .modal-content.editar form {
   width: 90%;
 }
 
-.modal-content.editar .modal-box-form div{
 .modal-content.editar .modal-box-form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
 }
 
-.modal-content.editar .modal-box-form div label{
 .modal-content.editar .modal-box-form div label {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-.modal-content.editar .modal-box-form div input{
 .modal-content.editar .modal-box-form div input {
   padding: 10px;
   font-size: 17px;
@@ -1661,14 +1459,12 @@ footer {
   box-shadow: 5px 5px 5px #a6a6a6;
 }
 
-.modal-editar .box-form-btn{
 .modal-editar .box-form-btn {
   display: flex;
   flex-direction: row !important;
   margin-top: 20px;
 }
 
-.modal-editar .box-form-btn button{
 .modal-editar .box-form-btn button {
   width: 20%;
   margin: 5px;
@@ -1681,13 +1477,11 @@ footer {
   border: transparent;
 }
 
-.perfil-container{
 .perfil-container {
   width: 100%;
   margin-top: 1%;
 }
 
-.perfil-container .perfil-inicio{
 .perfil-container .perfil-inicio {
   width: 100%;
   background-color: #E4623E;
@@ -1695,7 +1489,6 @@ footer {
   justify-content: center;
 }
 
-.perfil-container .perfil-inicio .perfil-inicio-conteudo{
 .perfil-container .perfil-inicio .perfil-inicio-conteudo {
   width: 80%;
   display: flex;
@@ -1705,14 +1498,12 @@ footer {
   color: white;
 }
 
-.perfil-inicio-conteudo .perfil-texto .perfil-texto-titulo{
 .perfil-inicio-conteudo .perfil-texto .perfil-texto-titulo {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.perfil-texto .perfil-texto-titulo button{
 .perfil-texto .perfil-texto-titulo button {
   margin-left: 20px;
   font-size: 18px;
@@ -1727,7 +1518,6 @@ footer {
 }
 
 
-.btn-perfil-trabalho{
 .btn-perfil-trabalho {
   font-size: 18px;
   border-radius: 9px;
@@ -1740,7 +1530,6 @@ footer {
   font-weight: bold;
 }
 
-.btn-perfil-trabalho:hover{
 .btn-perfil-trabalho:hover {
   cursor: pointer;
   background-color: white;
@@ -1749,17 +1538,14 @@ footer {
   transition: 0.3s;
 }
 
-.perfil-container .perfil-inicio .perfil-inicio-conteudo img{
 .perfil-container .perfil-inicio .perfil-inicio-conteudo img {
   border-radius: 10px;
 }
 
-.perfil-container .perfil-inicio .perfil-inicio-conteudo .perfil-texto{
 .perfil-container .perfil-inicio .perfil-inicio-conteudo .perfil-texto {
   margin-left: 5%;
 }
 
-.perfil-container .perfil-destaques{
 .perfil-container .perfil-destaques {
   display: flex;
   justify-content: center;
@@ -1768,19 +1554,16 @@ footer {
   width: 100%;
 }
 
-.perfil-container .perfil-destaques .perfil-destaques-conteudo{
 .perfil-container .perfil-destaques .perfil-destaques-conteudo {
   width: 80%;
 }
 
-.perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes{
 .perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes {
   display: flex;
   flex-direction: row;
   margin-top: 2%;
 }
 
-.perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes button{
 .perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes button {
   color: #E4623E;
   background-color: white;
@@ -1792,7 +1575,6 @@ footer {
   margin-right: 2%;
 }
 
-.perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes button:hover{
 .perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes button:hover {
   cursor: pointer;
   background-color:#E4623E;
@@ -1801,8 +1583,6 @@ footer {
   transition: 0.3s;
 }
 
-
-.perfil-destaques-cards .destaques-cards-org .destaques-card{
 .perfil-destaques-cards .destaques-cards-org .destaques-card {
   width: 20%;
   border: 2px solid black;
@@ -1812,7 +1592,6 @@ footer {
   margin-right: 1%;
 }
 
-.perfil-destaques-cards .destaques-cards-org{
 .perfil-destaques-cards .destaques-cards-org {
   display: flex;
   flex-direction: row;
@@ -1820,32 +1599,27 @@ footer {
   justify-content: center;
 }
 
-.destaques-card-header{
 .destaques-card-header {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.destaques-card-header p{
 .destaques-card-header p {
   margin: 0px;
   padding: 0px;
   color: #393939;
 }
 
-.destaques-card-header h3{
 .destaques-card-header h3 {
   margin: 0px;
   padding: 0px;
 }
 
-.perfil-destaques-cards .destaques-cards-org .destaques-card img{
 .perfil-destaques-cards .destaques-cards-org .destaques-card img {
   width: 100%;
 }
 
-.destaques-card-footer button{
 .destaques-card-footer button {
   background-color: #E4623E;
   color: white;
@@ -1856,12 +1630,10 @@ footer {
   padding: 10px;
 }
 
-.destaques-card-footer button:hover{
 .destaques-card-footer button:hover {
   cursor: pointer;
 }
 
-.perfil-edi-inicio{
 .perfil-edi-inicio {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -1869,7 +1641,6 @@ footer {
   justify-content: center;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo {
   width: 80%;
   display: flex;
@@ -1881,7 +1652,6 @@ footer {
   justify-content: space-evenly;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner {
   display: flex;
   flex-direction: column;
@@ -1890,7 +1660,6 @@ footer {
   margin-top: 5%;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner h3{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner h3 {
   margin: 0px;
   padding: 0px;
@@ -1898,14 +1667,12 @@ footer {
   color: black;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner p{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner p {
   margin: 0px;
   padding: 0px;
   margin-bottom: 15px;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner button{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner button {
   background-color: #E4623E;
   color: white;
@@ -1918,17 +1685,14 @@ footer {
   cursor: pointer;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner .btn-remover{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo .perfil-edi-config-banner .btn-remover {
   background-color: #808080;
 }
 
-.perfil-edi-inicio .perfil-edi-inicio-conteudo img{
 .perfil-edi-inicio .perfil-edi-inicio-conteudo img {
   border-radius: 10px;
 }
 
-.perfil-edi-conteudo{
 .perfil-edi-conteudo {
   display: flex;
   flex-direction: column;
@@ -1936,30 +1700,25 @@ footer {
   align-items: center;
 }
 
-.perfil-edi-conteudo .perfil-edi-form{
 .perfil-edi-conteudo .perfil-edi-form {
   width: 80%;
   display: flex;
   flex-direction: row;
   padding-top: 5%;
   padding-bottom: 5%;
-
   flex-wrap: wrap;
 }
 
-.perfil-edi-conteudo .perfil-edi-form div{
 .perfil-edi-conteudo .perfil-edi-form div {
   margin: 15px;
 }
 
-.perfil-edi-conteudo .perfil-edi-form input{
 .perfil-edi-conteudo .perfil-edi-form input {
   padding: 10px 30px;
   border-radius: 10px;
   border: 1px solid #808080;
 }
 
-.perfil-edi-conteudo .perfil-edi-form p{
 .perfil-edi-conteudo .perfil-edi-form p {
   margin: 0px;
   padding: 0px;
@@ -1968,7 +1727,6 @@ footer {
   font-weight: bold;
 }
 
-.perfil-edi-conteudo .perfil-edi-form .form-descricao textarea{
 .perfil-edi-conteudo .perfil-edi-form .form-descricao textarea {
   border-radius: 10px;
   border-color: #808080;
@@ -1977,7 +1735,6 @@ footer {
   padding: 1%;
 }
 
-.perfil-container .perfil-edi-destaques{
 .perfil-container .perfil-edi-destaques {
   display: flex;
   justify-content: center;
@@ -1986,7 +1743,6 @@ footer {
   width: 100%;
 }
 
-.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org{
 .perfil-container .perfil-edi-destaques .perfil-edi-destaques-org {
   width: 80%;
   display: flex;
@@ -1994,14 +1750,12 @@ footer {
   flex-wrap: wrap;
 }
 
-.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org .perfil-edi-destaques-botoes{
 .perfil-container .perfil-edi-destaques .perfil-edi-destaques-org .perfil-edi-destaques-botoes {
   display: flex;
   flex-direction: row;
   margin-top: 2%;
 }
 
-.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org .perfil-edi-destaques-botoes button{
 .perfil-container .perfil-edi-destaques .perfil-edi-destaques-org .perfil-edi-destaques-botoes button {
   color: #E4623E;
   background-color: white;
@@ -2013,7 +1767,6 @@ footer {
   margin-right: 2%;
 }
 
-.perfil-container .perfil-edi-destaques .perfil-edi-destaques-org button:hover{
 .perfil-container .perfil-edi-destaques .perfil-edi-destaques-org button:hover {
   cursor: pointer;
   background-color:#E4623E;
@@ -2022,8 +1775,6 @@ footer {
   transition: 0.3s;
 }
 
-
-.perfil-edi-destaques-org .destaques-edi-card{
 .perfil-edi-destaques-org .destaques-edi-card {
   width: 20%;
   border: 2px solid black;
@@ -2033,7 +1784,6 @@ footer {
   margin-right: 1%;
 }
 
-.destaques-edi-cards-org{
 .destaques-edi-cards-org {
   display: flex;
   flex-direction: row;
@@ -2041,32 +1791,27 @@ footer {
   justify-content: center;
 }
 
-.destaques-edi-card-header{
 .destaques-edi-card-header {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.destaques-edi-card-header p{
 .destaques-edi-card-header p {
   margin: 0px;
   padding: 0px;
   color: #393939;
 }
 
-.destaques-edi-card-header h3{
 .destaques-edi-card-header h3 {
   margin: 0px;
   padding: 0px;
 }
 
-.destaques-edi-card .destaques-edi-card-content img{
 .destaques-edi-card .destaques-edi-card-content img {
   width: 100%;
 }
 
-.destaques-edi-card-footer button{
 .destaques-edi-card-footer button {
   background-color: #E4623E;
   color: white;
@@ -2078,7 +1823,6 @@ footer {
   margin-right: 3%;
 }
 
-.destaques-card-footer button:hover{
 .destaques-card-footer button:hover {
   cursor: pointer;
 }

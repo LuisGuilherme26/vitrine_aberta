@@ -27,10 +27,8 @@ const Exposicao = () => {
             weight = "400"
         }
 
-        let span = createElement('span', { style: { color: colorText, fontSize: size, fontWeight: weight } }, text);
         let span = createElement('span', { style: { color: colorText, fontSize: size, fontWeight: weight } }, text.target.value);
 
-        setText((oldArray) => ([oldArray, span]));
         setText((oldArray) => ([...oldArray, span]));
         setIsBold(false);
         closeModal();
@@ -48,18 +46,6 @@ const Exposicao = () => {
         setIsBold(e.target.checked)
     }
 
-    function handleSize(e){
-        switch(e.target.value){
-            case "s":
-                setSize("15px")
-                break
-            case "m":
-                setSize("25px")
-                break
-            case "b":
-                setSize("32px")
-                break
-        }
     function handleSize(e) {
         let size = e.target.value + "px";
         setSize(size)
@@ -115,28 +101,8 @@ const Exposicao = () => {
                                     onRequestClose={closeModal}
                                     contentLabel="Example Modal"
                                     overlayClassName="modal-overlay"
-                                    className="modal-content"
                                     className="modal-content exp-texto"
                                 >
-                                    <h2>Adicionar texto</h2>
-
-                                    <input type="text" name="textField" onChange={(a) => { handleText(a.target.value) }} />
-                                    <SketchPicker
-                                        color={colorText}
-                                        onChangeComplete={handleColorText}
-                                    />
-                                    <input type="checkbox" onChange={handleBold} /><span>Negrito</span>
-                                    <label>
-                                        Tamanho da letra:
-                                        <select name="size" onChange={handleSize}>
-                                            <option value="">Selecione</option>
-                                            <option value="s">Pequeno</option>
-                                            <option value="m">Medio</option>
-                                            <option value="b">Grande</option>
-                                        </select>
-                                    </label>
-                                    <button onClick={() => { addText(valueText) }}>Adicionar texto</button>
-                                    <button onClick={closeModal}>Fechar</button>
                                     <div className="box">
                                         <div className="exp-texto-box">
                                             <h2>Adicionar texto</h2>
