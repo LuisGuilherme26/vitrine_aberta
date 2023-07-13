@@ -19,7 +19,7 @@ body {
   bottom: 0;
 }
 
-.modal-content{
+.modal-content {
   width: 30%;
   height: 40%;
   background-color: white;
@@ -51,7 +51,7 @@ nav {
   margin: 0px;
 }
 
-.navbar .nav-box ul{
+.navbar .nav-box ul {
   margin-left: 10%;
   height: 100%;
   padding: 0px;
@@ -71,7 +71,7 @@ nav {
   border-top: 2px solid #E4623E;
 }
 
-.navbar .nav-box{
+.navbar .nav-box {
   display: flex;
   align-items: center;
   height: 20px;
@@ -110,7 +110,7 @@ nav {
   font-size: 20px;
   font-weight: bolder;
   position: absolute;
-  left: 9%;
+  left: 11%;
   top: 28%;
 }
 
@@ -126,55 +126,59 @@ nav {
   cursor: pointer;
 }
 
-.peril-drop{
-  position: relative;
-  display: inline-block;
+.user-dropdown{
+  cursor: pointer;
 }
 
-.perfil-drop .drop-content{
+.user-dropdown:hover .user-dropdown-content{
+  display: block;
+}
+
+.user-dropdown .user-dropdown-content {
   display: none;
   position: absolute;
-
+  text-align: center;
   background-color: white;
   border: 2px solid #E4623E;
   border-radius: 0px 10px 10px;
 }
 
-#userImg:hover .user-dropdown-content{
-  display: none;
-}
-
-
-.user-dropdown .user-dropdown-content ul{
+.user-dropdown .user-dropdown-content ul {
   display: flex;
   flex-direction: column;
-  
   margin: 0px;
+  width: 150px;
 }
 
-.user-dropdown .user-dropdown-content ul li{
+.user-dropdown .user-dropdown-content ul li {
   color: #E4623E;
   border-bottom: 1px solid #E4623E;
-
   width: 100%;
   margin: 0px;
-
   cursor: pointer;
 }
 
-.user-dropdown .user-dropdown-content ul li button{
+.user-dropdown .user-dropdown-content li:hover{
+  background-color: #E4623E;
+  color: #eee;
+}
+
+.user-dropdown .user-dropdown-content button{
+  color: #E4623E;
   background: none;
   border: none;
-
   font-size: 16px;
-  color: #E4623E;
   font-weight: bold;
-
   cursor: pointer;
 }
 
-.user-dropdown .user-dropdown-content ul li:hover{
-  cursor: pointer;
+.user-dropdown .user-dropdown-content button:hover{
+  background-color: #E4623E;
+  color: #eee;
+}
+
+.user-dropdown .user-dropdown-content button:hover{
+  color: white;
 }
 
 .disc-drop {
@@ -184,6 +188,7 @@ nav {
   border-radius: 2px 8px 8px;
   display: none;
 }
+
 #disc:hover .disc-drop {
   display: block;
 }
@@ -290,7 +295,7 @@ nav {
   cursor: pointer;
 }
 
-.login-container{
+.login-container {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -300,6 +305,7 @@ nav {
   margin-top: 130px;
   padding: 2%;
 }
+
 .Login-content {
   width: calc(66.6% - 100px);
   height: 100%;
@@ -494,6 +500,7 @@ nav {
   font-size: 20px;
   font-weight: bold;
 }
+
 .Filtro .filtro-btn:hover {
   background-color: #E4623E;
   color: white;
@@ -505,34 +512,39 @@ nav {
   background-color: #E4623E;
 } */
 
-  .publicacoes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 .publicacoes {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-  .publi-drop{
-    background-color: white;
-    position: absolute;
-    border: 2px solid #E4623E;
-    border-radius: 2px 8px 8px;
-    display: none;
-  }
-  .publi-drop ul{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 15px;
-  }
-  .publi-drop ul li{
-    padding: 5px;
-    display: flex;
-    align-items: center;
+.publicacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.publi-drop {
+  background-color: white;
+  position: absolute;
+  border: 2px solid #E4623E;
+  border-radius: 2px 8px 8px;
+  display: none;
+}
+
+.publi-drop ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 15px;
+}
+
+.publi-drop ul li {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
 .publi-drop {
   background-color: white;
   position: absolute;
@@ -542,9 +554,11 @@ nav {
   z-index: 5;
 }
 
-  .publi-drop ul li img{
-    margin-right: 10px;
-  }
+.publi-drop ul li img {
+  margin-right: 10px;
+  width: 20px;
+}
+
 .publi-drop ul {
   display: flex;
   flex-direction: column;
@@ -552,8 +566,7 @@ nav {
   padding: 15px;
 }
 
-.publi-drop ul li:hover{
-.publi-drop ul li {
+.publi-drop ul li:hover {
   padding: 5px;
   display: flex;
   align-items: center;
@@ -568,34 +581,37 @@ nav {
   border-top: 2px solid #E4623E;
 }
 
-  #publi-btn:hover .publi-drop{
-    display: block;
-    color: #E4623E;
-  }
+#publi-btn:hover .publi-drop {
+  display: block;
+  color: #E4623E;
+}
+
 #publi-btn:hover .publi-drop {
   display: block;
   color: #E4623E;
 }
 
 
-  .publicacoes .publi-cards{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .publicacoes .publi-cards .publi-card{
-    background-color: white;
-    border: 2px solid black;
-    width: 20%;
-    height: auto;
-    min-height: 420px;
-    padding: 2%;
-    margin: 1%;
-    border-radius: 15px;
-  }
+.publicacoes .publi-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.publicacoes .publi-cards .publi-card {
+  background-color: white;
+  border: 2px solid black;
+  width: 20%;
+  min-height: 420px;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 15px;
+  min-height: 450px;
+}
+
 .publicacoes .publi-cards {
   width: 100%;
   display: flex;
@@ -606,27 +622,6 @@ nav {
   margin-bottom: 20px;
 }
 
-  .publicacoes .publi-cards .publi-card .publi-card-header{
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-.publicacoes .publi-cards .publi-card {
-  background-color: white;
-  border: 2px solid black;
-  width: 20%;
-  min-height: 420px;
-  padding: 2%;
-  margin: 1%;
-  border-radius: 15px;
-}
-
-  .publicacoes .publi-cards .publi-card .publi-card-header .publi-card-titulo h3,h4{
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
 .publicacoes .publi-cards .publi-card .publi-card-header {
   margin-bottom: 15px;
   display: flex;
@@ -634,9 +629,6 @@ nav {
   justify-content: space-between;
 }
 
-  .publicacoes .publi-cards .publi-card .publi-card-header span{
-    position: relative;
-  }
 .publicacoes .publi-cards .publi-card .publi-card-header .publi-card-titulo h3,
 h4 {
   justify-content: center;
@@ -644,17 +636,37 @@ h4 {
   padding: 0;
 }
 
-  .publicacoes .publi-cards .publi-card .publi-card-header h4{
-    font-size: 14px;
-    color: #4a4a4a;
-  }
+.publicacoes .publi-cards .publi-card .publi-card-header {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .publicacoes .publi-cards .publi-card .publi-card-header span {
   position: relative;
 }
 
-  .publicacoes .publi-cards .publi-card .publi-card-body img{
-    width: 100%;
-  }
+.publicacoes .publi-cards .publi-card .publi-card-header .publi-card-titulo h3,
+h4 {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.publicacoes .publi-cards .publi-card .publi-card-header h4 {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.publicacoes .publi-cards .publi-card .publi-card-header span {
+  position: relative;
+}
+
+.publicacoes .publi-cards .publi-card .publi-card-body img {
+  width: 100%;
+}
+
 .publicacoes .publi-cards .publi-card .publi-card-header h4 {
   font-size: 14px;
   color: #4a4a4a;
@@ -664,7 +676,7 @@ h4 {
   width: 100%;
 }
 
-.publicacoes .publi-cards .publi-card button{
+.publicacoes .publi-cards .publi-card button {
   width: 35%;
   color: white;
   background: #E4623E;
@@ -677,7 +689,7 @@ h4 {
   font-weight: lighter;
 }
 
-  /* .Publicacao{
+/* .Publicacao{
 
 /* .Publicacao{
     padding: 5px 50px;
@@ -765,6 +777,31 @@ h2 {
   cursor: pointer;
   color: white;
   font-weight: bold;
+}
+
+.modal-content.exp-cor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  height: 400px;
+  padding: 15px;
+}
+
+.modal-content.exp-cor h2{
+  margin-bottom: 10px;
+}
+
+.modal-content.exp-cor button {
+  background-color: #E4623E;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .Exposicao {
@@ -904,7 +941,11 @@ h2 {
   height: 32%;
 }
 
-.box2>button {
+.box2 form{
+  width: 100%;
+}
+
+.box2 form button {
   background-color: #E4623E;
   color: #fff;
   font-weight: bold;
@@ -980,17 +1021,17 @@ h2 {
 
 .aut {
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin: 90px 0;
+  padding: 25px;
 }
 
 .aut-box {
   border: 3px solid #E4623E;
   border-radius: 15px;
-  /* border-bottom: 3px solid #fff; */
   display: flex;
   flex-direction: column;
-  padding: 40px 50px;
+  margin: 20px;
+  padding: 30px 40px;
   position: relative;
 }
 
@@ -1008,8 +1049,8 @@ h2 {
 
 .aut-box h3 {
   position: absolute;
-  left: 10px;
-  top: 0;
+  left: 20px;
+  top: -5px;
 }
 
 .aut-box button {
@@ -1195,6 +1236,7 @@ footer {
 .modal-disc-body .modal-div-form {
   margin-left: 5%;
 }
+
 .modal-disc-body .modal-disc-form .modal-disc-form-item div {
   display: flex;
   flex: row;
@@ -1282,7 +1324,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-image: url('./media/retangulo.svg');
-  /* aspect-ratio: 960/300; */
+  aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1568,7 +1610,7 @@ footer {
   color: #E4623E;
   background-color: white;
   border: 2px solid #E4623E;
-  font-size:  24px;
+  font-size: 24px;
   font-size: 24px;
   border-radius: 10px;
   padding: 15px;
@@ -1577,7 +1619,7 @@ footer {
 
 .perfil-container .perfil-destaques .perfil-destaques-conteudo .perfil-destaques-botoes button:hover {
   cursor: pointer;
-  background-color:#E4623E;
+  background-color: #E4623E;
   background-color: #E4623E;
   color: white;
   transition: 0.3s;
@@ -1760,7 +1802,7 @@ footer {
   color: #E4623E;
   background-color: white;
   border: 2px solid #E4623E;
-  font-size:  24px;
+  font-size: 24px;
   font-size: 24px;
   border-radius: 10px;
   padding: 15px;
@@ -1769,7 +1811,7 @@ footer {
 
 .perfil-container .perfil-edi-destaques .perfil-edi-destaques-org button:hover {
   cursor: pointer;
-  background-color:#E4623E;
+  background-color: #E4623E;
   background-color: #E4623E;
   color: white;
   transition: 0.3s;
@@ -1827,24 +1869,24 @@ footer {
   cursor: pointer;
 }
 
-.Samurai{
+.Samurai {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
   padding: 20px;
 }
 
-.samu-body{
+.samu-body {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.samu-body img{
+.samu-body img {
   width: 35%;
 }
 
-.samu-body span{
+.samu-body span {
   border-left: 1px solid black;
   margin-left: 20px;
   padding: 10px;
@@ -1852,7 +1894,7 @@ footer {
   width: 45%;
 }
 
-.Halloween{
+.Halloween {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1861,34 +1903,41 @@ footer {
   color: white;
 }
 
-.Halloween video{
+.Halloween video {
   border: 2px solid white;
   border-radius: 10px;
   margin-bottom: 15px;
   cursor: pointer;
 }
 
-.Halloween span{
+.Halloween span {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.Mulheres{
+.Mulheres {
   display: flex;
   flex-direction: column;
   margin-top: 90px;
   align-items: center;
 }
 
-.Mulheres div{
+.Mulheres div {
   display: flex;
   flex-direction: row;
   padding: 15px;
   justify-content: space-evenly;
 }
 
-.Mulheres div img{
+.Mulheres div img {
   width: 33%;
   margin: 10px;
+}
+
+.Garota{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  padding: 20px;
 }

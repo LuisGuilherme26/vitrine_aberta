@@ -14,12 +14,10 @@ const Cadastro = () => {
         e.preventDefault();
         const newUser = { nome, email, senha };
 
-        axios.post("http://localhost:3001/usuario/registrar", newUser)
         axios.post("http://localhost:3001/users/registrar", newUser)
             .then(
                 (res) => {
                     console.log(res.data);
-                    alert(`Usuário $(nome) criado com sucesso!`);
                     alert(`Usuário criado com sucesso!`);
                     navigate("/");
                 }
